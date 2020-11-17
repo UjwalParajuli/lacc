@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="primary_blue">#01009A</color>
-    <color name="background_font">#9F9FDF</color>
+    <color name="splash_select_label">#9F9FDF</color>
     <color name="inner_border">#A4A6B3</color>
     <color name="on_boarding_circle">#FFCF00</color>
     <color name="on_boarding_circle_two">#C4C4C4</color>

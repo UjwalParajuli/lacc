@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">LACC</string>
+    <string name="app_logo">LACC Logo</string>
+    <string name="app_full_name">Legal Aid and Consultancy Center</string>
+    <string name="splash_select_label">Please select language to proceed.</string>
+    <string name="button_english">English</string>
+    <string name="button_nepali">नेपाली</string>
 </resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_blue"
+    android:fillViewport="true"
+    tools:context=".SplashScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/image_lacc_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="184dp"
+            android:contentDescription="@string/app_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/lacc_logo" />
+
+        <TextView
+            android:id="@+id/text_view_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inter_semi_bold"
+            android:gravity="center_horizontal|top"
+            android:text="@string/app_full_name"
+            android:textAppearance="@style/legal_aid_a"
+            android:lineSpacingExtra="1sp"
+            android:translationY="-0.71sp"
+            app:layout_constraintEnd_toEndOf="@+id/image_lacc_logo"
+            app:layout_constraintStart_toStartOf="@+id/image_lacc_logo"
+            app:layout_constraintTop_toBottomOf="@+id/image_lacc_logo" />
+
+        <TextView
+            android:id="@+id/text_view_select_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:fontFamily="@font/inter_regular"
+            android:text="@string/splash_select_label"
+            android:textColor="@color/splash_select_label"
+            android:textSize="17sp"
+            android:lineSpacingExtra="0sp"
+            android:gravity="center_horizontal|top"
+            app:layout_constraintEnd_toEndOf="@+id/text_view_app_name"
+            app:layout_constraintStart_toStartOf="@+id/text_view_app_name"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_app_name" />
+
+        <Button
+            android:id="@+id/button_english"
+            android:layout_width="130dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="113dp"
+            android:background="@drawable/select_button_border"
+            android:fontFamily="@font/inter_semi_bold"
+            android:gravity="center_horizontal|center_vertical"
+            android:letterSpacing="-0.02"
+            android:lineSpacingExtra="1sp"
+            android:text="@string/button_english"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button_nepali"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="@+id/text_view_select_label"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_select_label" />
+
+        <Button
+            android:id="@+id/button_nepali"
+            android:layout_width="130dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="113dp"
+            android:background="@drawable/select_button_border"
+            android:fontFamily="@font/arap_bk_regular"
+            android:gravity="center_horizontal|center_vertical"
+            android:letterSpacing="-0.02"
+            android:lineSpacingExtra="1sp"
+            android:text="@string/button_nepali"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/text_view_select_label"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_english"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_select_label" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
