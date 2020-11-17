@@ -5,4 +5,15 @@
     <string name="splash_select_label">Please select language to proceed.</string>
     <string name="button_english">English</string>
     <string name="button_nepali">नेपाली</string>
+    <string-array name="State">
+        <item>Gandaki Province</item>
+        <item>Bagmati Province</item>
+        <item>Lumbini Province</item>
+    </string-array>
+
+    <string-array name="City">
+        <item>Kaski Province</item>
+        <item>Manang Province</item>
+        <item>Mustang Province</item>
+    </string-array>
 </resources>
