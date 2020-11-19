@@ -6,19 +6,27 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
+import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
+
 public class SignupActivity extends AppCompatActivity {
 
+    String [] SPINNERLISTSTATE={"Gandaki Province", "Bagmati Province","Lumbini Province" };
+    String[] SPINNERLISTCITY={"Mustang","Kaski","Lamjung"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        Spinner statespinner=findViewById(R.id.signupstate);
+        ArrayAdapter<String> arrayAdapterstate = new ArrayAdapter<String>(this,
+                android.R.layout.simple_dropdown_item_1line, SPINNERLISTSTATE);
+        MaterialBetterSpinner betterSpinner=(MaterialBetterSpinner) findViewById(R.id.signup_state);
+        betterSpinner.setAdapter(arrayAdapterstate);
 
-        ArrayAdapter <String> stateAdapter = new ArrayAdapter<String>(SignupActivity.this,
-                android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.State));
-        stateAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        statespinner.setAdapter(stateAdapter);
+        ArrayAdapter<String> arrayAdaptercity = new ArrayAdapter<String>(this,
+                android.R.layout.simple_dropdown_item_1line, SPINNERLISTCITY);
+        MaterialBetterSpinner betterSpinner1=(MaterialBetterSpinner) findViewById(R.id.signup_city);
+        betterSpinner1.setAdapter(arrayAdaptercity);
+
 
 
     }

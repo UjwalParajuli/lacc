@@ -1,100 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".SignupActivity">
-    <LinearLayout
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
+
         <TextView
-            android:layout_width="741px"
-            android:layout_height="92px"
-            android:id="@+id/signuptext"
-            android:text="Please provide your information"
-            android:textFontWeight="600"
-            android:layout_marginTop="82px"
-            android:fontFamily="@font/inter_regular"
+            android:id="@+id/signup_provideinfo"
+            android:layout_width="311dp"
+            android:layout_height="92dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="58dp"
+            android:gravity="center_vertical"
+            android:letterSpacing="-0.01"
+            android:lineSpacingExtra="5sp"
+            android:text="@string/signup_info"
+            android:textAppearance="@font/inter_semi_bold"
             android:textColor="@color/black"
-            android:textSize="34px"
-            android:gravity="center"
-            android:lineHeight="46px">
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
         </TextView>
+
         <ImageView
-            android:id="@+id/signuppfl"
-            android:layout_width="152px"
-            android:layout_height="152px"
-            android:layout_marginLeft="290px"
-            android:layout_marginTop="60px"
-            android:src="@drawable/ic_signuppfl">
+            android:id="@+id/signup_img"
+            android:layout_width="56.81dp"
+            android:layout_height="54dp"
+            android:src="@drawable/ic_signuppfl"
+            android:layout_marginTop="175dp"
+            android:layout_marginLeft="159dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
         </ImageView>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="20dp">
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:id="@+id/signupphonenum"
-                android:textColor="@color/primary_black"
-                android:textSize="15sp"
-                android:inputType="number"
-                android:fontFamily="@font/inter_regular"
-                android:lineHeight="22px"
-                android:hint="Enter your Phone Number"
-                android:layout_marginTop="15dp">
-            </EditText>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:id="@+id/signupfullname"
-                android:textColor="@color/primary_black"
-                android:layout_below="@id/signupphonenum"
-                android:textSize="15sp"
-                android:hint="Enter your Full Name"
-                android:layout_marginTop="15dp">
-            </EditText>
+        <EditText
+            android:id="@+id/signup_phone"
+            android:layout_width="311dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="261dp"
+            android:hint="Enter your Phone Number"
+            android:inputType="number"
+            android:textAppearance="@font/inter_semi_bold"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </EditText>
 
-            <androidx.appcompat.widget.AppCompatSpinner
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:id="@+id/signupstate"
-                android:layout_below="@id/signupfullname"
-                android:layout_centerHorizontal="true">
+        <EditText
+            android:id="@+id/signup_fullname"
+            android:layout_width="311dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="327dp"
+            android:hint="Enter your Full Name"
+            android:textAppearance="@font/inter_semi_bold"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </EditText>
 
-            </androidx.appcompat.widget.AppCompatSpinner>
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/signup_state"
+            android:layout_width="311dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="393dp"
+            android:hint="In which State you belong?"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner>
 
-            <androidx.appcompat.widget.AppCompatSpinner
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:id="@+id/signupcity"
-                android:layout_below="@id/signupstate"
-                android:layout_centerHorizontal="true">
-            </androidx.appcompat.widget.AppCompatSpinner>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/signupcity"
-                app:passwordToggleEnabled="true"
-                android:layout_marginTop="15dp">
-                <EditText
-                    android:id="@+id/signuppassword"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:textColor="@color/primary_black"
-                    android:textSize="15dp"
-                    android:hint="Password">
-                </EditText>
-            </com.google.android.material.textfield.TextInputLayout>
-
-        </RelativeLayout>
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/signup_city"
+            android:layout_width="311dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="459dp"
+            android:hint="Please select your City?"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner>
 
 
-    </LinearLayout>
-
-
-</RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
