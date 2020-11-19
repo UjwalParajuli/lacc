@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="741px"
+            android:layout_height="92px"
+            android:id="@+id/signuptext"
+            android:text="Please provide your information"
+            android:textFontWeight="600"
+            android:layout_marginTop="82px"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="@color/black"
+            android:textSize="34px"
+            android:gravity="center"
+            android:lineHeight="46px">
+        </TextView>
+        <ImageView
+            android:id="@+id/signuppfl"
+            android:layout_width="152px"
+            android:layout_height="152px"
+            android:layout_marginLeft="290px"
+            android:layout_marginTop="60px"
+            android:src="@drawable/ic_signuppfl">
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/signupphonenum"
+                android:textColor="@color/primary_black"
+                android:textSize="15sp"
+                android:inputType="number"
+                android:fontFamily="@font/inter_regular"
+                android:lineHeight="22px"
+                android:hint="Enter your Phone Number"
+                android:layout_marginTop="15dp">
+            </EditText>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/signupfullname"
+                android:textColor="@color/primary_black"
+                android:layout_below="@id/signupphonenum"
+                android:textSize="15sp"
+                android:hint="Enter your Full Name"
+                android:layout_marginTop="15dp">
+            </EditText>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/signupstate"
+                android:layout_below="@id/signupfullname"
+                android:layout_centerHorizontal="true">
+
+            </androidx.appcompat.widget.AppCompatSpinner>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/signupcity"
+                android:layout_below="@id/signupstate"
+                android:layout_centerHorizontal="true">
+            </androidx.appcompat.widget.AppCompatSpinner>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signupcity"
+                app:passwordToggleEnabled="true"
+                android:layout_marginTop="15dp">
+                <EditText
+                    android:id="@+id/signuppassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="@color/primary_black"
+                    android:textSize="15dp"
+                    android:hint="Password">
+                </EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
