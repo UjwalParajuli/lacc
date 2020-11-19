@@ -12,6 +12,13 @@
     <string name="select_language_en">Select Language</string>
     <string name="select_language_np">भाषा चयन गर्नुहोस</string>
     <string name="text_continue">Continue</string>
+    <string name="onboard_heading_first">All Law Information</string>
+    <string name="onboard_content_first">Provisions related to women, legal identity, birth and citizenship, polygamy and child marriage, etc.</string>
+    <string name="onboard_heading_second">Queston &amp; Answer</string>
+    <string name="onboard_content_second">User can ask question and get appropriate answers from LACC support teams.</string>
+    <string name="onboard_heading_third">Chat</string>
+    <string name="onboard_content_third">LACC reply the queries of user instantly by chatt support</string>
+    <string name="next_button">Next</string>
 
 
 </resources>

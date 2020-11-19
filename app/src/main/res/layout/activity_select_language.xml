@@ -18,11 +18,23 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="208dp"
             android:background="@drawable/square_border"
+            android:visibility="visible"
             app:backgroundTint="@null"
-            app:layout_constraintEnd_toStartOf="@+id/button_english_unselected"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_nepali_selected"
+            android:layout_width="152dp"
+            android:layout_height="152dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="208dp"
+            android:alpha="0.6"
+            android:background="@drawable/square_border_fill"
+            android:visibility="gone"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_nepali_unselected" />
 
         <Button
             android:id="@+id/button_english_unselected"
@@ -33,9 +45,75 @@
             android:background="@drawable/square_border"
             app:backgroundTint="@null"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/button_nepali_unselected"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_english_selected"
+            android:layout_width="152dp"
+            android:layout_height="152dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="208dp"
+            android:alpha="0.6"
+            android:background="@drawable/square_border_fill"
+            android:visibility="gone"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_english_unselected" />
+
+        <Button
+            android:id="@+id/button_continue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="84dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/inter_semi_bold"
+            android:gravity="center_horizontal|center_vertical"
+            android:letterSpacing="-0.02"
+            android:lineSpacingExtra="1sp"
+            android:text="@string/text_continue"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_select_lang_np" />
+
+        <ImageView
+            android:id="@+id/image_select_hand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            app:layout_constraintEnd_toEndOf="@+id/button_english_unselected"
+            app:layout_constraintStart_toStartOf="@+id/button_nepali_unselected"
+            app:layout_constraintTop_toBottomOf="@+id/button_nepali_selected"
+            app:srcCompat="@drawable/select_hand" />
+
+        <ImageView
+            android:id="@+id/image_checked_nepali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="18dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/button_nepali_selected"
+            app:layout_constraintTop_toTopOf="@+id/button_nepali_selected"
+            app:srcCompat="@drawable/selected" />
+
+        <ImageView
+            android:id="@+id/image_checked_english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="18dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/button_english_selected"
+            app:layout_constraintTop_toTopOf="@+id/button_english_selected"
+            app:srcCompat="@drawable/selected" />
 
         <TextView
             android:id="@+id/tv_nepali_en"
@@ -55,19 +133,19 @@
             android:id="@+id/tv_nepali_np"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="232dp"
             android:fontFamily="@font/arap_bk_regular"
-            android:textStyle="bold"
             android:gravity="center_horizontal|top"
             android:letterSpacing="0"
             android:lineSpacingExtra="5sp"
             android:text="@string/button_nepali"
             android:textColor="@color/primary_blue"
             android:textSize="17sp"
+            android:textStyle="bold"
             android:translationY="-2.31sp"
-            app:layout_constraintStart_toStartOf="@+id/button_nepali_unselected"
-            app:layout_constraintTop_toTopOf="@+id/button_nepali_unselected" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tv_a_np"
@@ -77,13 +155,12 @@
             android:layout_marginBottom="12dp"
             android:fontFamily="@font/devanagari_new_normal"
             android:gravity="center_horizontal|top"
+            android:includeFontPadding="false"
             android:letterSpacing="0"
             android:lineSpacingExtra="0sp"
             android:text="@string/text_a_np"
             android:textColor="@color/primary_blue"
             android:textSize="17sp"
-            android:includeFontPadding="false"
-            app:layout_constraintBottom_toBottomOf="@+id/button_nepali_unselected"
             app:layout_constraintStart_toStartOf="@+id/tv_nepali_en"
             app:layout_constraintTop_toBottomOf="@+id/tv_nepali_en" />
 
@@ -91,19 +168,19 @@
             android:id="@+id/tv_english"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="232dp"
+            android:layout_marginEnd="94dp"
             android:fontFamily="@font/inter_semi_bold"
             android:gravity="center_horizontal|center_vertical"
+            android:includeFontPadding="false"
             android:letterSpacing="-0.02"
             android:lineSpacingExtra="1sp"
             android:text="@string/button_english"
             android:textColor="@color/primary_blue"
             android:textSize="17sp"
             android:translationY="-2.31sp"
-            android:includeFontPadding="false"
-            app:layout_constraintStart_toStartOf="@+id/button_english_unselected"
-            app:layout_constraintTop_toTopOf="@+id/button_english_unselected" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tv_english_light"
@@ -132,34 +209,23 @@
             android:text="@string/text_a_en"
             android:textColor="@color/primary_blue"
             android:textSize="17sp"
-            app:layout_constraintBottom_toBottomOf="@+id/button_english_unselected"
             app:layout_constraintStart_toStartOf="@+id/tv_english_light"
             app:layout_constraintTop_toBottomOf="@+id/tv_english_light" />
-
-        <ImageView
-            android:id="@+id/image_select_hand"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="68dp"
-            app:layout_constraintEnd_toEndOf="@+id/button_english_unselected"
-            app:layout_constraintStart_toStartOf="@+id/button_nepali_unselected"
-            app:layout_constraintTop_toBottomOf="@+id/button_nepali_unselected"
-            app:srcCompat="@drawable/select_hand" />
 
         <TextView
             android:id="@+id/tv_select_lang_en"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
-            android:text="@string/select_language_en"
             android:fontFamily="@font/inter_regular"
-            android:textSize="17sp"
-            android:textColor="@color/black"
-            android:lineSpacingExtra="1sp"
-            android:translationY="-0.71sp"
             android:gravity="center_horizontal|top"
-            android:letterSpacing="0"
             android:includeFontPadding="false"
+            android:letterSpacing="0"
+            android:lineSpacingExtra="1sp"
+            android:text="@string/select_language_en"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:translationY="-0.71sp"
             app:layout_constraintEnd_toEndOf="@+id/image_select_hand"
             app:layout_constraintStart_toStartOf="@+id/image_select_hand"
             app:layout_constraintTop_toBottomOf="@+id/image_select_hand" />
@@ -169,40 +235,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="11dp"
-            android:text="@string/select_language_np"
             android:fontFamily="@font/devanagari_new_normal"
-            android:textSize="17sp"
-            android:textColor="@color/black"
-            android:includeFontPadding="false"
-            android:lineSpacingExtra="0sp"
             android:gravity="center_horizontal|top"
+            android:includeFontPadding="false"
             android:letterSpacing="0"
+            android:lineSpacingExtra="0sp"
+            android:text="@string/select_language_np"
+            android:textColor="@color/black"
+            android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="@+id/tv_select_lang_en"
             app:layout_constraintStart_toStartOf="@+id/tv_select_lang_en"
             app:layout_constraintTop_toBottomOf="@+id/tv_select_lang_en" />
-
-        <Button
-            android:id="@+id/button_continue"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="65dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginBottom="84dp"
-            android:fontFamily="@font/inter_semi_bold"
-            android:text="@string/text_continue"
-            android:textAllCaps="false"
-            android:textSize="17sp"
-            android:textColor="@color/white"
-            android:lineSpacingExtra="1sp"
-            android:gravity="center_horizontal|center_vertical"
-            android:letterSpacing="-0.02"
-            app:backgroundTint="@null"
-            android:background="@drawable/button_background"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_select_lang_np" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
