@@ -42,7 +42,7 @@
         <EditText
             android:id="@+id/signup_phone"
             android:layout_width="311dp"
-            android:layout_height="40dp"
+            android:layout_height="43dp"
             android:layout_marginLeft="32dp"
             android:layout_marginTop="261dp"
             android:hint="Enter your Phone Number"
@@ -57,7 +57,7 @@
         <EditText
             android:id="@+id/signup_fullname"
             android:layout_width="311dp"
-            android:layout_height="40dp"
+            android:layout_height="43dp"
             android:layout_marginLeft="32dp"
             android:layout_marginTop="327dp"
             android:hint="Enter your Full Name"
@@ -94,6 +94,23 @@
             app:layout_constraintTop_toTopOf="parent">
         </com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:passwordToggleEnabled="true">
+            <EditText
+                android:id="@+id/signup_password"
+                android:layout_width="311dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="525dp"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:inputType="textPassword">
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
