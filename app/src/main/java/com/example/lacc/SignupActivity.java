@@ -13,7 +13,7 @@ public class SignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        Spinner statespinner= (Spinner) findViewById(R.id.signupstate);
+        Spinner statespinner=findViewById(R.id.signupstate);
 
         ArrayAdapter <String> stateAdapter = new ArrayAdapter<String>(SignupActivity.this,
                 android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.State));

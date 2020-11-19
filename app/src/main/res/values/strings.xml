@@ -5,6 +5,13 @@
     <string name="splash_select_label">Please select language to proceed.</string>
     <string name="button_english">English</string>
     <string name="button_nepali">नेपाली</string>
+    <string name="text_nepali_en">Nepali</string>
+    <string name="text_a_np">अ</string>
+    <string name="text_a_en">A</string>
+    <string name="select_language_en">Select Language</string>
+    <string name="select_language_np">भाषा चयन गर्नुहोस</string>
+    <string name="text_continue">Continue</string>
+
     <string-array name="State">
         <item>Gandaki Province</item>
         <item>Bagmati Province</item>
