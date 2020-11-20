@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context=".SelectLanguage">
+    tools:context=".SelectLanguageActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -51,8 +51,8 @@
             android:id="@+id/button_english_selected"
             android:layout_width="152dp"
             android:layout_height="152dp"
-            android:layout_marginEnd="24dp"
             android:layout_marginTop="208dp"
+            android:layout_marginEnd="24dp"
             android:alpha="0.6"
             android:background="@drawable/square_border_fill"
             android:visibility="gone"
@@ -65,7 +65,6 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="65dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="84dp"
             android:background="@drawable/button_background"
@@ -81,16 +80,15 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_select_lang_np" />
+            app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
         <ImageView
             android:id="@+id/image_select_hand"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="68dp"
-            app:layout_constraintEnd_toEndOf="@+id/button_english_unselected"
-            app:layout_constraintStart_toStartOf="@+id/button_nepali_unselected"
-            app:layout_constraintTop_toBottomOf="@+id/button_nepali_selected"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline2"
             app:srcCompat="@drawable/select_hand" />
 
         <ImageView
@@ -246,6 +244,20 @@
             app:layout_constraintEnd_toEndOf="@+id/tv_select_lang_en"
             app:layout_constraintStart_toStartOf="@+id/tv_select_lang_en"
             app:layout_constraintTop_toBottomOf="@+id/tv_select_lang_en" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="428dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="687dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

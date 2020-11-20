@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".WelcomeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_lacc_team"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/lacc_team" />
+
+        <TextView
+            android:id="@+id/tv_lacc_nepal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/inter_semi_bold"
+            android:gravity="top"
+            android:letterSpacing="0.01"
+            android:lineSpacingExtra="0sp"
+            android:text="@string/lacc_nepal"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/image_lacc_team"
+            app:layout_constraintTop_toBottomOf="@+id/image_lacc_team" />
+
+        <TextView
+            android:id="@+id/tv_lacc_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/lacc_description"
+            android:fontFamily="@font/inter_regular"
+            android:textSize="17sp"
+            android:letterSpacing="-0.02"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="1sp"
+            android:translationY="-0.71sp"
+            android:gravity="top"
+            app:lineHeight="22sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_lacc_nepal"
+            app:layout_constraintStart_toStartOf="@+id/tv_lacc_nepal"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lacc_nepal" />
+
+        <Button
+            android:id="@+id/button_sign_up"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="49dp"
+            android:layout_marginEnd="32dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_background"
+            android:text="@string/sign_up"
+            android:textAllCaps="false"
+            android:fontFamily="@font/inter_semi_bold"
+            android:textSize="17sp"
+            android:letterSpacing="-0.02"
+            android:textColor="@color/white"
+            android:lineSpacingExtra="1sp"
+            android:gravity="center_horizontal|center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lacc_description" />
+
+        <TextView
+            android:id="@+id/tv_continue_as_guest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/continue_as_guest"
+            android:fontFamily="@font/inter_regular"
+            android:textSize="15sp"
+            android:textColor="@color/dark_black"
+            android:lineSpacingExtra="2sp"
+            android:letterSpacing="-0.02"
+            android:alpha="0.5"
+            android:gravity="center_horizontal|center_vertical"
+            app:layout_constraintEnd_toEndOf="@+id/button_sign_up"
+            app:layout_constraintStart_toStartOf="@+id/button_sign_up"
+            app:layout_constraintTop_toBottomOf="@+id/button_sign_up" />
+
+        <TextView
+            android:id="@+id/tv_already_account_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="96dp"
+            android:layout_marginBottom="86dp"
+            android:text="@string/already_account"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tv_continue_as_guest"
+            app:layout_constraintStart_toStartOf="@+id/tv_continue_as_guest"
+            app:layout_constraintTop_toBottomOf="@+id/tv_continue_as_guest" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

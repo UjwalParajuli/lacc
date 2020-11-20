@@ -8,7 +8,7 @@ import android.widget.Spinner;
 
 import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
-public class SignupActivity extends AppCompatActivity {
+public class SignUpActivity extends AppCompatActivity {
 
     String [] SPINNERLISTSTATE={"Gandaki Province", "Bagmati Province","Lumbini Province" };
     String[] SPINNERLISTCITY={"Mustang","Kaski","Lamjung"};

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_onboard_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="95dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/onboarding_first" />
+
+        <ImageView
+            android:id="@+id/indicator_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/indicator_second"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_onboard_content_first"
+            app:srcCompat="@drawable/active_circle" />
+
+        <ImageView
+            android:id="@+id/indicator_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/indicator_first"
+            app:layout_constraintEnd_toStartOf="@+id/indicator_third"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/indicator_first"
+            app:layout_constraintTop_toTopOf="@+id/indicator_first"
+            app:srcCompat="@drawable/active_circle" />
+
+        <ImageView
+            android:id="@+id/indicator_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/indicator_second"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/indicator_second"
+            app:layout_constraintTop_toTopOf="@+id/indicator_second"
+            app:srcCompat="@drawable/active_circle" />
+
+        <TextView
+            android:id="@+id/tv_onboard_content_first"
+            android:layout_width="327dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/inter_regular"
+            android:gravity="center_horizontal|top"
+            android:letterSpacing="0"
+            android:lineSpacingExtra="1sp"
+            android:text="@string/onboard_content_first"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:translationY="-0.71sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_onboard_heading_first"
+            app:lineHeight="22dp" />
+
+        <TextView
+            android:id="@+id/tv_onboard_heading_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp"
+            android:fontFamily="@font/inter_semi_bold"
+            android:gravity="center_horizontal|top"
+            android:letterSpacing="0.04"
+            android:lineSpacingExtra="1sp"
+            android:text="@string/onboard_heading_first"
+            android:textColor="@color/primary_blue"
+            android:textSize="22sp"
+            android:translationY="-0.69sp"
+            app:layout_constraintEnd_toEndOf="@+id/image_onboard_first"
+            app:layout_constraintStart_toStartOf="@+id/image_onboard_first"
+            app:layout_constraintTop_toBottomOf="@+id/image_onboard_first" />
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="166dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginBottom="106dp"
+            android:text="@string/next_button"
+            android:textAllCaps="false"
+            android:fontFamily="@font/inter_semi_bold"
+            android:textSize="17sp"
+            android:letterSpacing="-0.02"
+            android:textColor="@color/white"
+            android:lineSpacingExtra="1sp"
+            android:gravity="center_horizontal|center_vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/indicator_third"
+            app:layout_constraintStart_toStartOf="@+id/indicator_first"
+            app:layout_constraintTop_toBottomOf="@+id/indicator_first" />
+
+        <Button
+            android:id="@+id/button_start"
+            android:layout_width="166dp"
+            android:layout_height="56dp"
+            android:text="@string/start_button"
+            android:textAllCaps="false"
+            android:layout_marginBottom="106dp"
+            android:layout_marginTop="75dp"
+            android:fontFamily="@font/inter_semi_bold"
+            android:textSize="17sp"
+            android:letterSpacing="-0.02"
+            android:textColor="@color/white"
+            android:lineSpacingExtra="1sp"
+            android:gravity="center_horizontal|center_vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/button_next"
+            app:layout_constraintStart_toStartOf="@+id/button_next"
+            app:layout_constraintTop_toBottomOf="@+id/indicator_second" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
