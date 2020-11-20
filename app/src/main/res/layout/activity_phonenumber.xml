@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Phonenumber">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/loginphone_text"
+            android:layout_width="311dp"
+            android:layout_height="92dp"
+            android:layout_marginTop="84dp"
+            android:fontFamily="@font/inter_regular"
+            android:gravity="center_vertical"
+            android:letterSpacing="-0.01"
+            android:lineSpacingExtra="5sp"
+            android:text="Please enter your phone number"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
+        <EditText
+            android:id="@+id/loginphone_num"
+            android:layout_width="311dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="86dp"
+            android:fontFamily="@font/inter_regular"
+            android:hint="Enter your Phone Number"
+            android:inputType="number"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/loginphone_text"
+            app:layout_constraintStart_toStartOf="@id/loginphone_text"
+            app:layout_constraintTop_toBottomOf="@+id/loginphone_text" >
+
+        </EditText>
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="311dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="45dp"
+            app:layout_constraintEnd_toEndOf="@+id/loginphone_num"
+            app:layout_constraintStart_toStartOf="@+id/loginphone_num"
+            app:layout_constraintTop_toBottomOf="@+id/loginphone_num"
+            android:text="Send Code"
+            android:background="@drawable/signupbutton">
+        </Button>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
+
