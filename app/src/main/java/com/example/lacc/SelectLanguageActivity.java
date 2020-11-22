@@ -6,12 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class SelectLanguageActivity extends AppCompatActivity {
-    private Button button_nepali_unselected, button_nepali_selected, button_english_unselected
-            , button_english_selected, button_continue;
+    private ImageButton button_nepali_unselected, button_nepali_selected, button_english_unselected
+            , button_english_selected;
 
     private ImageView image_checked_nepali, image_checked_english;
 
@@ -26,7 +27,7 @@ public class SelectLanguageActivity extends AppCompatActivity {
         button_nepali_selected = findViewById(R.id.button_nepali_selected);
         button_english_unselected = findViewById(R.id.button_english_unselected);
         button_english_selected = findViewById(R.id.button_english_selected);
-        button_continue = findViewById(R.id.button_continue);
+        Button button_continue = findViewById(R.id.button_continue);
 
         image_checked_nepali = findViewById(R.id.image_checked_nepali);
         image_checked_english = findViewById(R.id.image_checked_english);
