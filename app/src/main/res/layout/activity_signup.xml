@@ -90,17 +90,19 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/signup_password"
-            android:layout_width="wrap_content"
+            style="@style/Widget.Design.TextInputLayout"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="33dp"
+            app:hintEnabled="false"
             app:layout_constraintEnd_toEndOf="@+id/signup_city"
             app:layout_constraintStart_toStartOf="@+id/signup_city"
             app:layout_constraintTop_toBottomOf="@+id/signup_city"
-            app:passwordToggleEnabled="true"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            app:passwordToggleEnabled="true">
+
             <EditText
                 android:layout_width="311dp"
-                android:layout_height="43dp"
+                android:layout_height="wrap_content"
                 android:hint="Password"
                 android:inputType="textPassword"
                 android:textColor="@color/black"
@@ -112,34 +114,31 @@
             android:layout_width="311dp"
             android:layout_height="46dp"
             android:layout_marginTop="45dp"
+            android:textAllCaps="false"
             app:layout_constraintEnd_toEndOf="@+id/signup_password"
             app:layout_constraintStart_toStartOf="@+id/signup_password"
             app:layout_constraintTop_toBottomOf="@+id/signup_password"
             android:text="Create Account"
-            android:background="@drawable/signupbutton">
+            android:background="@drawable/button_background">
         </Button>
 
         <TextView
             android:id="@+id/signup_login"
-            android:layout_width="180dp"
+            android:layout_width="wrap_content"
             android:layout_height="18dp"
             android:layout_marginTop="44dp"
+            android:layout_marginBottom="77dp"
+            android:fontFamily="@font/inter_semi_bold"
             android:gravity="top"
             android:lineSpacingExtra="2sp"
-            android:fontFamily="@font/inter_semi_bold"
             android:text="Already have account? Log In"
             android:textColor="@color/black"
             android:textSize="13sp"
             android:translationY="-1.13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/signup_createbtn"
             app:layout_constraintStart_toStartOf="@+id/signup_createbtn"
-            app:layout_constraintTop_toBottomOf="@+id/signup_createbtn">
-        </TextView>
-
-
-
-
-
+            app:layout_constraintTop_toBottomOf="@+id/signup_createbtn"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

@@ -99,6 +99,7 @@
             android:layout_width="180dp"
             android:layout_height="18dp"
             android:layout_marginTop="206dp"
+            android:layout_marginBottom="77dp"
             android:fontFamily="@font/inter_regular"
             android:gravity="top"
             android:letterSpacing="0"
@@ -107,6 +108,7 @@
             android:textColor="@color/black"
             android:textSize="13sp"
             android:translationY="-1.13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/login_forgotpsw"
             app:layout_constraintStart_toStartOf="@+id/login_forgotpsw"
             app:layout_constraintTop_toBottomOf="@+id/login_forgotpsw">
