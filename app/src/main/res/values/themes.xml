@@ -28,5 +28,53 @@
 
     </style>
 
+    <style name="lacc">
+
+        <item name="android:textSize">
+            24sp
+        </item>
+
+
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+
+    </style>
+
+
+
+    <style name="what_do_you">
+
+        <item name="android:textSize">
+            24sp
+        </item>
+
+
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+
+    </style>
+
+    <style name="type_your_q">
+
+        <item name="android:textSize">
+            17sp
+        </item>
+
+
+
+        <item name="android:textColor">
+            #80000000
+        </item>
+
+    </style>
+
+    <style name="TextHint" parent="Base.TextAppearance.AppCompat">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
 
 </resources>

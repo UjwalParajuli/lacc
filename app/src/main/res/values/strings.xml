@@ -25,5 +25,17 @@
     <string name="continue_as_guest">Continue as Guest</string>
     <string name="already_account">Already have account? <font color='#01009A'> <u>Log In</u></font></string>
 
+    <string name="lacc"> LACC </string>
+
+    <!-- strings.xml -->
+    <string name="what_do_you">
+
+What do you want to
+        ask?
+</string>
+
+
+
+
 
 </resources>
