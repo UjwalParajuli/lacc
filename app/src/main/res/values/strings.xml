@@ -24,6 +24,10 @@
     <string name="sign_up">Sign Up with Mobile Number</string>
     <string name="continue_as_guest">Continue as Guest</string>
     <string name="already_account">Already have account? <font color='#01009A'> <u>Log In</u></font></string>
+    <string name="sign_up_heading">Please provide your <b>information.</b></string>
+    <string name="full_name_hint">Enter your Full Name</string>
+    <string name="phone_number_hint">Enter your Phone Number</string>
+    <string name="password_hint">Password</string>
 
     <string name="lacc"> LACC </string>
 

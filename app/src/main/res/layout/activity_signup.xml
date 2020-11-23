@@ -11,134 +11,80 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:id="@+id/signup_provideinfo"
+            android:id="@+id/sign_up_heading"
             android:layout_width="311dp"
             android:layout_height="92dp"
             android:layout_marginTop="54dp"
             android:gravity="center_vertical"
             android:letterSpacing="-0.01"
             android:lineSpacingExtra="5sp"
-            android:text="Please provide your information"
-            android:fontFamily="@font/inter_semi_bold"
+            android:text="@string/sign_up_heading"
+            android:fontFamily="@font/inter_regular"
             android:textColor="@color/black"
             android:textSize="34sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/signup_img"
-            android:layout_width="56.81dp"
-            android:layout_height="54dp"
-            android:layout_marginTop="25dp"
-            app:layout_constraintEnd_toEndOf="@+id/signup_provideinfo"
-            app:layout_constraintStart_toStartOf="@+id/signup_provideinfo"
-            app:layout_constraintTop_toBottomOf="@+id/signup_provideinfo"
-            app:srcCompat="@drawable/ic_signuppfl"/>
+        <EditText
+            android:id="@+id/edit_text_full_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:alpha="0.5"
+            android:hint="@string/full_name_hint"
+            android:fontFamily="@font/inter_semi_bold"
+            android:textColorHint="@color/sign_up_back_text"
+            android:textColor="@color/primary_black"
+            android:textSize="17sp"
+            android:theme="@style/MyEditTextTheme"
+            app:layout_constraintEnd_toEndOf="@+id/sign_up_heading"
+            app:layout_constraintStart_toStartOf="@+id/sign_up_heading"
+            app:layout_constraintTop_toBottomOf="@+id/sign_up_heading" />
 
         <EditText
-            android:id="@+id/signup_phone"
-            android:layout_width="311dp"
-            android:layout_height="43dp"
-            android:layout_marginTop="33dp"
-            android:hint="Enter your Phone Number"
-            android:inputType="number"
-            android:fontFamily="@font/inter_semi_bold"
-            android:textColor="@color/black"
-            android:textSize="17sp"
-            app:layout_constraintEnd_toEndOf="@id/signup_img"
-            app:layout_constraintStart_toStartOf="@id/signup_img"
-            app:layout_constraintTop_toBottomOf="@+id/signup_img"/>
-
-        <EditText
-            android:id="@+id/signup_fullname"
-            android:layout_width="311dp"
-            android:layout_height="43dp"
-            android:layout_marginTop="33dp"
-            android:hint="Enter your Full Name"
-            android:fontFamily="@font/inter_semi_bold"
-            android:textColor="@color/black"
-            android:textSize="17sp"
-            app:layout_constraintEnd_toEndOf="@id/signup_phone"
-            app:layout_constraintStart_toStartOf="@id/signup_phone"
-            app:layout_constraintTop_toBottomOf="@+id/signup_phone"/>
-
-        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-            android:id="@+id/signup_state"
-            android:layout_width="311dp"
-            android:layout_height="43dp"
-            android:layout_marginTop="33dp"
-            android:hint="In which State you belong?"
-            android:textColor="@color/black"
-            android:textSize="17sp"
-            app:layout_constraintEnd_toEndOf="@+id/signup_fullname"
-            app:layout_constraintStart_toStartOf="@+id/signup_fullname"
-            app:layout_constraintTop_toBottomOf="@+id/signup_fullname" />
-
-        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
-            android:id="@+id/signup_city"
-            android:layout_width="311dp"
-            android:layout_height="43dp"
-            android:layout_marginTop="33dp"
-            android:hint="Please select your City?"
-            android:textColor="@color/black"
-            android:textSize="17sp"
-            app:layout_constraintEnd_toEndOf="@+id/signup_state"
-            app:layout_constraintStart_toStartOf="@+id/signup_state"
-            app:layout_constraintTop_toBottomOf="@+id/signup_state" />
-
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/signup_password"
-            style="@style/Widget.Design.TextInputLayout"
+            android:id="@+id/edit_text_phone"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="33dp"
+            android:ems="10"
+            android:inputType="phone"
+            android:alpha="0.5"
+            android:hint="@string/phone_number_hint"
+            android:fontFamily="@font/inter_semi_bold"
+            android:textColorHint="@color/sign_up_back_text"
+            android:textColor="@color/primary_black"
+            android:textSize="17sp"
+            android:theme="@style/MyEditTextTheme"
+            app:layout_constraintEnd_toEndOf="@+id/edit_text_full_name"
+            app:layout_constraintStart_toStartOf="@+id/edit_text_full_name"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_full_name" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_text_password"
+            style="@style/Widget.Design.TextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:alpha="0.5"
             app:hintEnabled="false"
-            app:layout_constraintEnd_toEndOf="@+id/signup_city"
-            app:layout_constraintStart_toStartOf="@+id/signup_city"
-            app:layout_constraintTop_toBottomOf="@+id/signup_city"
+            app:layout_constraintEnd_toEndOf="@+id/edit_text_phone"
+            app:layout_constraintStart_toStartOf="@+id/edit_text_phone"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_phone"
             app:passwordToggleEnabled="true">
 
             <EditText
                 android:layout_width="311dp"
                 android:layout_height="wrap_content"
-                android:hint="Password"
+                android:fontFamily="@font/inter_semi_bold"
+                android:hint="@string/password_hint"
                 android:inputType="textPassword"
-                android:textColor="@color/black"
-                android:textSize="17sp" />
+                android:textColor="@color/primary_black"
+                android:textColorHint="@color/sign_up_back_text"
+                android:textSize="17sp"
+                android:theme="@style/MyEditTextTheme" />
         </com.google.android.material.textfield.TextInputLayout>
-
-        <Button
-            android:id="@+id/signup_createbtn"
-            android:layout_width="311dp"
-            android:layout_height="46dp"
-            android:layout_marginTop="45dp"
-            android:textAllCaps="false"
-            app:layout_constraintEnd_toEndOf="@+id/signup_password"
-            app:layout_constraintStart_toStartOf="@+id/signup_password"
-            app:layout_constraintTop_toBottomOf="@+id/signup_password"
-            android:text="Create Account"
-            android:background="@drawable/button_background">
-        </Button>
-
-        <TextView
-            android:id="@+id/signup_login"
-            android:layout_width="wrap_content"
-            android:layout_height="18dp"
-            android:layout_marginTop="44dp"
-            android:layout_marginBottom="77dp"
-            android:fontFamily="@font/inter_semi_bold"
-            android:gravity="top"
-            android:lineSpacingExtra="2sp"
-            android:text="Already have account? Log In"
-            android:textColor="@color/black"
-            android:textSize="13sp"
-            android:translationY="-1.13sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/signup_createbtn"
-            app:layout_constraintStart_toStartOf="@+id/signup_createbtn"
-            app:layout_constraintTop_toBottomOf="@+id/signup_createbtn"/>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
