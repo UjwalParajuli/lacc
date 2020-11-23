@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <!--Rectangle-->
+    <View
+        android:id="@+id/rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/rectangle"
+        tools:ignore="MissingConstraints" />
+
+    <!--LACC-->
+    <TextView
+        android:id="@+id/lacc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="64dp"
+        android:fontFamily="@font/inter_semi_bold"
+        android:gravity="top"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="7sp"
+        android:text="@string/lacc"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--What do you want to ask-->
+    <TextView
+        android:id="@+id/what_do_you"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/what_do_you"
+        android:fontFamily="@font/inter_semi_bold"
+        android:textSize="24sp"
+        android:letterSpacing="-0.02"
+        android:textColor="@color/white"
+        android:lineSpacingExtra="3sp"
+        android:translationY="-0.71sp"
+        android:gravity="top"
+        app:layout_constraintEnd_toEndOf="@+id/lacc"
+        app:layout_constraintStart_toStartOf="@+id/lacc"
+        app:layout_constraintTop_toBottomOf="@+id/lacc" />
+
+
+
+
+
+    <!-- Type your questions-->
+    <EditText
+        android:id="@+id/type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/frame"
+        android:fontFamily="@font/inter_regular"
+        android:hint="Type your question here."
+        android:paddingLeft="16dp"
+        android:textSize="17sp"
+        android:letterSpacing="-0.02"
+        android:textFontWeight="600"
+        android:lineSpacingExtra="1sp"
+        app:layout_constraintStart_toStartOf="@id/what_do_you"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/what_do_you"
+        tools:ignore="MissingConstraints"
+        />
+
+    <!-- Alert-->
+    <ImageButton
+        android:id="@+id/alert"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/alert"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="283dp"
+        tools:layout_editor_absoluteY="36dp" />
+
+    <!-- Send-->
+    <ImageButton
+        android:id="@+id/send"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/send"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="343dp"
+        tools:layout_editor_absoluteY="36dp" />
+
+    <!-- Recent Questions -->
+    <TextView
+        android:id="@+id/recentQuestions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:letterSpacing="-0.02"
+        android:fontFamily="@font/inter_regular"
+        android:textFontWeight="600"
+        android:text="Recent questions"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@id/type"
+        app:layout_constraintEnd_toEndOf="@id/type"
+        app:layout_constraintTop_toBottomOf="@+id/type"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
