@@ -9,21 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LACC">
-        <activity android:name=".OnBoardingActivity"/>
+        <activity android:name=".OnBoardingActivity"></activity>
         <activity android:name=".SelectLanguageActivity">
 
         </activity>
-        <activity android:name=".SplashScreenActivity" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".SplashScreenActivity" />
+        <activity android:name=".LoginActivity">
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+
         </activity>
+
         <activity android:name=".SignUpActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".WelcomeActivity" />
         <activity android:name=".MainActivity" />
     </application>
 
