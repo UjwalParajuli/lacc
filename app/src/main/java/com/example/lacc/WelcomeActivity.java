@@ -55,10 +55,14 @@ public class WelcomeActivity extends AppCompatActivity {
     }
 
     private void go_to_home_guest(){
+        Intent intent = new Intent(WelcomeActivity.this,HomeActivity.class);
+        startActivity(intent);
 
     }
 
     private void go_to_login(){
+        Intent intent = new Intent(WelcomeActivity.this,LoginActivity.class);
+        startActivity(intent);
 
     }
 }

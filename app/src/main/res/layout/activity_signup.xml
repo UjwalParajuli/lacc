@@ -88,7 +88,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/signup_button_createaccount"
+            android:id="@+id/signup_button_create_account"
             android:layout_width="311dp"
             android:layout_height="46dp"
             android:layout_marginTop="33dp"
@@ -97,14 +97,15 @@
             android:textSize="17sp"
             android:textColor="@color/white"
             android:background="@drawable/button_background"
+            android:textAllCaps="false"
             app:layout_constraintEnd_toEndOf="@+id/signup_edit_text_password"
             app:layout_constraintStart_toStartOf="@+id/signup_edit_text_password"
             app:layout_constraintTop_toBottomOf="@+id/signup_edit_text_password" />
 
         <TextView
-            android:id="@+id/signup_text_view_alreadylogin"
-            android:layout_width="189dp"
-            android:layout_height="18dp"
+            android:id="@+id/signup_text_view_already_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="227dp"
             android:layout_marginBottom="77dp"
             android:gravity="top"
@@ -116,9 +117,9 @@
             android:translationY="-1.13sp"
             android:fontFamily="@font/inter_semi_bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/signup_button_createaccount"
-            app:layout_constraintStart_toStartOf="@+id/signup_button_createaccount"
-            app:layout_constraintTop_toBottomOf="@+id/signup_button_createaccount" />
+            app:layout_constraintEnd_toEndOf="@+id/signup_button_create_account"
+            app:layout_constraintStart_toStartOf="@+id/signup_button_create_account"
+            app:layout_constraintTop_toBottomOf="@+id/signup_button_create_account" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

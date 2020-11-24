@@ -15,12 +15,12 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
-    TextView newsign;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        TextView login_text_view_new_signup = findViewById(R.id.login_text_view_new_signup);
 
 //        String text ="New to LACC Nepal Sign Up";
 //
@@ -41,5 +41,13 @@ public class LoginActivity extends AppCompatActivity {
 //                finish();
 //            }
 //        });
+
+        login_text_view_new_signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this,SignUpActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
