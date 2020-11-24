@@ -21,6 +21,8 @@
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
     <color name="fragment_background">#F2F2F2</color>
+    <color name="settings_side">#993C3C43</color>
+
     <color name="popup_question_text">#BF000000</color>
 
 

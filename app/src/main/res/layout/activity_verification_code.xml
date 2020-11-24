@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context=".VerificationCode">
+    tools:context=".VerificationCodeActivity">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -17,7 +17,7 @@
             android:gravity="center_vertical"
             android:letterSpacing="-0.01"
             android:lineSpacingExtra="5sp"
-            android:text="Please enter Code below."
+            android:text="@string/verification_code_heading"
             android:fontFamily="@font/inter_regular"
             android:textColor="@color/black"
             android:textSize="34sp"
@@ -47,13 +47,14 @@
 
 
         <TextView
-            android:id="@+id/verification_resend"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/verification_code_resend"
+            android:layout_width="149dp"
+            android:layout_height="18dp"
             android:layout_marginTop="45dp"
-            android:gravity="end|top"
+            android:gravity="right|top"
+            android:letterSpacing="0"
             android:lineSpacingExtra="2sp"
-            android:text="@string/did_not_receive"
+            android:text="@string/verification_code_resend"
             android:textColor="@color/black"
             android:textSize="13sp"
             android:translationY="-1.13sp"
@@ -62,6 +63,4 @@
             app:layout_constraintTop_toBottomOf="@+id/pinView">
         </TextView>
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 </ScrollView>

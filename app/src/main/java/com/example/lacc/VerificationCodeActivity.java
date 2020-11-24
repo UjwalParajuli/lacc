@@ -1,3 +1,5 @@
+
+
 package com.example.lacc;
 
 import androidx.annotation.NonNull;
@@ -12,14 +14,15 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class VerificationCode extends AppCompatActivity {
+public class VerificationCodeActivity extends AppCompatActivity {
 
+    TextView Resendcode;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verification_code);
 
-        TextView textView = findViewById(R.id.verification_resend);
+        Resendcode = findViewById(R.id.verification_code_resend);
 
         String text ="Did not Receive! Resend";
 
@@ -27,11 +30,11 @@ public class VerificationCode extends AppCompatActivity {
         ClickableSpan clickableSpan1=new ClickableSpan() {
             @Override
             public void onClick(@NonNull View view) {
-                Toast.makeText(VerificationCode.this, "one", Toast.LENGTH_SHORT).show();
+                Toast.makeText(VerificationCodeActivity.this, "one", Toast.LENGTH_SHORT).show();
             }
         };
         ss.setSpan(clickableSpan1,17, 23, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-        textView.setText(ss);
-        textView.setMovementMethod(LinkMovementMethod.getInstance());
+        Resendcode.setText(ss);
+        Resendcode.setMovementMethod(LinkMovementMethod.getInstance());
     }
 }

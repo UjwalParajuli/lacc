@@ -15,39 +15,27 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
+    TextView newsignup;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        newsignup=findViewById(R.id.login_text_view_newsignup);
 
-        TextView login_text_view_new_signup = findViewById(R.id.login_text_view_new_signup);
 
-//        String text ="New to LACC Nepal Sign Up";
-//
-//        SpannableString ss = new SpannableString(text);
-//        ClickableSpan clickableSpan1=new ClickableSpan() {
-//            @Override
-//            public void onClick(@NonNull View view) {
-//            }
-//        };
-//        ss.setSpan(clickableSpan1,18, 25, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-//        textView.setText(ss);
-//        textView.setMovementMethod(LinkMovementMethod.getInstance());
-//        newsign.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent=new Intent(LoginActivity.this, SignUpActivity.class);
-//                startActivity(intent);
-//                finish();
-//            }
-//        });
+        String text = "Already have account? Log In";
 
-        login_text_view_new_signup.setOnClickListener(new View.OnClickListener() {
+        SpannableString ss = new SpannableString(text);
+        ClickableSpan clickableSpan1 = new ClickableSpan() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this,SignUpActivity.class);
+            public void onClick(@NonNull View view) {
+                Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
                 startActivity(intent);
+                finish();
             }
-        });
+        };
+        ss.setSpan(clickableSpan1, 18, 25, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        newsignup.setText(ss);
+        newsignup.setMovementMethod(LinkMovementMethod.getInstance());
     }
 }
