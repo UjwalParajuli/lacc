@@ -28,8 +28,14 @@
     <string name="full_name_hint">Enter your Full Name</string>
     <string name="phone_number_hint">Enter your Phone Number</string>
     <string name="password_hint">Password</string>
-
+    <string name="nav_home">Feed</string>
+    <string name="nav_read">Read</string>
+    <string name="nav_setting">Setting</string>
     <string name="lacc"> LACC </string>
+    <string name="home_edit_text_hint">Type your question here.</string>
+    <string name="recent_questions">Recent questions</string>
+    <string name="cancel">Cancel</string>
+    <string name="post">Post</string>
 
     <!-- strings.xml -->
     <string name="what_do_you">

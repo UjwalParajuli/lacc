@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="758dp">
+
+    <View
+        android:id="@+id/ask_question_popup_header"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@drawable/popup_header_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_cancel_ask_question_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="@string/cancel"
+        android:textColor="@color/system_blue_light"
+        android:textSize="17sp"
+        android:lineSpacingExtra="1sp"
+        android:translationY="-0.71sp"
+        android:gravity="top"
+        android:letterSpacing="-0.02"
+        app:layout_constraintBottom_toBottomOf="@+id/ask_question_popup_header"
+        app:layout_constraintStart_toStartOf="@+id/ask_question_popup_header"
+        app:layout_constraintTop_toTopOf="@+id/ask_question_popup_header" />
+
+    <TextView
+        android:id="@+id/tv_post_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:text="@string/post"
+        android:fontFamily="@font/inter_semi_bold"
+        android:textColor="@color/system_blue_light"
+        android:textSize="17sp"
+        android:lineSpacingExtra="1sp"
+        android:translationY="-0.71sp"
+        android:gravity="end|top"
+        android:letterSpacing="-0.02"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_cancel_ask_question_popup"
+        app:layout_constraintEnd_toEndOf="@+id/ask_question_popup_header"
+        app:layout_constraintTop_toTopOf="@+id/tv_cancel_ask_question_popup" />
+
+    <TextView
+        android:id="@+id/tv_ask_question"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/what_do_you"
+        android:fontFamily="@font/inter_semi_bold"
+        android:textSize="24sp"
+        android:textColor="@color/primary_blue"
+        android:lineSpacingExtra="3sp"
+        android:gravity="center_vertical"
+        android:letterSpacing="-0.02"
+        app:layout_constraintStart_toStartOf="@+id/tv_cancel_ask_question_popup"
+        app:layout_constraintTop_toBottomOf="@+id/ask_question_popup_header" />
+
+    <EditText
+        android:id="@+id/edit_text_main_question"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:ems="10"
+        android:fontFamily="@font/inter_semi_bold"
+        android:gravity="center_vertical"
+        android:hint="@string/home_edit_text_hint"
+        android:inputType="textMultiLine"
+        android:letterSpacing="-0.02"
+        android:lineHeight="28sp"
+        android:lineSpacingExtra="4sp"
+        android:textColor="@color/popup_question_text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_post_question"
+        app:layout_constraintStart_toStartOf="@+id/tv_ask_question"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ask_question" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

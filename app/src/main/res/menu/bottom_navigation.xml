@@ -2,16 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/nav_home"
-        android:icon="@drawable/home"
-        android:title="" />
+        android:icon="@drawable/home_navigation_selector"
+        android:title="@string/nav_home" />
     <item
         android:id="@+id/nav_read"
-        android:icon="@drawable/read"
-        android:title="" />
+        android:icon="@drawable/read_navigation_selector"
+        android:title="@string/nav_read" />
     <item
         android:id="@+id/nav_setting"
-        android:icon="@drawable/setting"
-        android:title="" />
-
-
+        android:icon="@drawable/setting_navigation_selector"
+        android:title="@string/nav_setting" />
 </menu>
