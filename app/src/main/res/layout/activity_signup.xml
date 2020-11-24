@@ -27,7 +27,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/edit_text_full_name"
+            android:id="@+id/signup_edit_text_full_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="72dp"
@@ -45,7 +45,7 @@
             app:layout_constraintTop_toBottomOf="@+id/sign_up_heading" />
 
         <EditText
-            android:id="@+id/edit_text_phone"
+            android:id="@+id/signup_edit_text_phone"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="33dp"
@@ -58,21 +58,21 @@
             android:textColor="@color/primary_black"
             android:textSize="17sp"
             android:theme="@style/MyEditTextTheme"
-            app:layout_constraintEnd_toEndOf="@+id/edit_text_full_name"
-            app:layout_constraintStart_toStartOf="@+id/edit_text_full_name"
-            app:layout_constraintTop_toBottomOf="@+id/edit_text_full_name" />
+            app:layout_constraintEnd_toEndOf="@+id/signup_edit_text_full_name"
+            app:layout_constraintStart_toStartOf="@+id/signup_edit_text_full_name"
+            app:layout_constraintTop_toBottomOf="@+id/signup_edit_text_full_name" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/edit_text_password"
+            android:id="@+id/signup_edit_text_password"
             style="@style/Widget.Design.TextInputLayout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
             android:alpha="0.5"
             app:hintEnabled="false"
-            app:layout_constraintEnd_toEndOf="@+id/edit_text_phone"
-            app:layout_constraintStart_toStartOf="@+id/edit_text_phone"
-            app:layout_constraintTop_toBottomOf="@+id/edit_text_phone"
+            app:layout_constraintEnd_toEndOf="@+id/signup_edit_text_phone"
+            app:layout_constraintStart_toStartOf="@+id/signup_edit_text_phone"
+            app:layout_constraintTop_toBottomOf="@+id/signup_edit_text_phone"
             app:passwordToggleEnabled="true">
 
             <EditText
@@ -86,6 +86,40 @@
                 android:textSize="17sp"
                 android:theme="@style/MyEditTextTheme" />
         </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/signup_button_createaccount"
+            android:layout_width="311dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="33dp"
+            android:text="@string/signup_button"
+            android:fontFamily="@font/inter_semi_bold"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+            app:layout_constraintEnd_toEndOf="@+id/signup_edit_text_password"
+            app:layout_constraintStart_toStartOf="@+id/signup_edit_text_password"
+            app:layout_constraintTop_toBottomOf="@+id/signup_edit_text_password" />
+
+        <TextView
+            android:id="@+id/signup_text_view_alreadylogin"
+            android:layout_width="189dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="227dp"
+            android:layout_marginBottom="77dp"
+            android:gravity="top"
+            android:letterSpacing="0"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/already_account"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:translationY="-1.13sp"
+            android:fontFamily="@font/inter_semi_bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/signup_button_createaccount"
+            app:layout_constraintStart_toStartOf="@+id/signup_button_createaccount"
+            app:layout_constraintTop_toBottomOf="@+id/signup_button_createaccount" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
