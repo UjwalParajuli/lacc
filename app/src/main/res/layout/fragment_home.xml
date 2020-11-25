@@ -7,19 +7,18 @@
     android:layout_height="match_parent">
 
    <!--Rectangle-->
- <View
-     android:id="@+id/rectangle"
-     android:layout_width="match_parent"
-     android:layout_height="240dp"
-     android:background="@drawable/rectangle"
-     app:layout_constraintEnd_toEndOf="parent"
-     app:layout_constraintStart_toStartOf="parent"
-     app:layout_constraintTop_toTopOf="parent"
-     tools:ignore="MissingConstraints" />
+   <View
+       android:id="@+id/home_rectangle"
+       android:layout_width="match_parent"
+       android:layout_height="240dp"
+       android:background="@drawable/rectangle"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
 
     <!--LACC-->
    <TextView
-       android:id="@+id/lacc"
+       android:id="@+id/tv_lacc_home"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:layout_marginStart="24dp"
@@ -36,7 +35,7 @@
 
     <!--What do you want to ask-->
    <TextView
-       android:id="@+id/what_do_you"
+       android:id="@+id/tv_home_question"
        android:layout_width="238dp"
        android:layout_height="wrap_content"
        android:layout_marginTop="16dp"
@@ -48,71 +47,67 @@
        android:textColor="@color/white"
        android:textSize="24sp"
        android:translationY="-0.71sp"
-       app:layout_constraintStart_toStartOf="@+id/lacc"
-       app:layout_constraintTop_toBottomOf="@+id/lacc" />
-
-
-
-
+       app:layout_constraintStart_toStartOf="@+id/tv_lacc_home"
+       app:layout_constraintTop_toBottomOf="@+id/tv_lacc_home" />
 
     <!-- Type your questions-->
    <EditText
-       android:id="@+id/type"
+       android:id="@+id/edit_text_ask_question"
        android:layout_width="0dp"
        android:layout_height="wrap_content"
        android:layout_marginTop="12dp"
        android:background="@drawable/frame"
        android:fontFamily="@font/inter_semi_bold"
-       android:hint="Type your question here."
+       android:hint="@string/home_edit_text_hint"
        android:letterSpacing="-0.02"
        android:lineSpacingExtra="1sp"
        android:paddingStart="16dp"
+       android:paddingEnd="16dp"
        android:textSize="17sp"
-       app:layout_constraintEnd_toEndOf="@+id/send"
-       app:layout_constraintStart_toStartOf="@id/what_do_you"
-       app:layout_constraintTop_toBottomOf="@+id/what_do_you"
+       android:focusable="false"
+       app:layout_constraintEnd_toEndOf="@+id/home_chat"
+       app:layout_constraintStart_toStartOf="@id/tv_home_question"
+       app:layout_constraintTop_toBottomOf="@+id/tv_home_question"
        tools:ignore="MissingConstraints" />
 
     <!-- Alert-->
    <ImageButton
-       android:id="@+id/alert"
+       android:id="@+id/home_notification"
        android:layout_width="0dp"
        android:layout_height="wrap_content"
        android:layout_marginEnd="29dp"
        android:background="@color/primary_blue"
-       app:layout_constraintBottom_toBottomOf="@+id/lacc"
-       app:layout_constraintEnd_toStartOf="@+id/send"
-       app:layout_constraintTop_toTopOf="@+id/lacc"
+       app:layout_constraintBottom_toBottomOf="@+id/tv_lacc_home"
+       app:layout_constraintEnd_toStartOf="@+id/home_chat"
+       app:layout_constraintTop_toTopOf="@+id/tv_lacc_home"
        app:srcCompat="@drawable/alert" />
 
     <!-- Send-->
    <ImageButton
-       android:id="@+id/send"
+       android:id="@+id/home_chat"
        android:layout_width="0dp"
        android:layout_height="wrap_content"
        android:layout_marginEnd="26dp"
        android:background="@color/primary_blue"
-       app:layout_constraintBottom_toBottomOf="@+id/alert"
+       app:layout_constraintBottom_toBottomOf="@+id/home_notification"
        app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintTop_toTopOf="@+id/alert"
+       app:layout_constraintTop_toTopOf="@+id/home_notification"
        app:srcCompat="@drawable/send" />
 
     <!-- Recent Questions -->
    <TextView
-       android:id="@+id/recentQuestions"
+       android:id="@+id/tv_recent_questions"
        android:layout_width="0dp"
        android:layout_height="wrap_content"
        android:layout_marginTop="16dp"
        android:fontFamily="@font/inter_semi_bold"
        android:letterSpacing="-0.02"
-       android:text="Recent questions"
+       android:text="@string/recent_questions"
        android:textColor="@color/black"
        android:textSize="24sp"
-       app:layout_constraintEnd_toEndOf="@id/type"
-       app:layout_constraintStart_toStartOf="@id/type"
-       app:layout_constraintTop_toBottomOf="@+id/rectangle" />
-
-
+       app:layout_constraintEnd_toEndOf="@id/edit_text_ask_question"
+       app:layout_constraintStart_toStartOf="@id/edit_text_ask_question"
+       app:layout_constraintTop_toBottomOf="@+id/home_rectangle" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
