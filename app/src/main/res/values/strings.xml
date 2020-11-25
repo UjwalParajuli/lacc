@@ -50,6 +50,14 @@
     <string name="cancel">Cancel</string>
     <string name="post">Post</string>
 
+    <string name="type"> Type your question here. </string>
+
+    <string name = "recent"> Recent Questions</string>
+
+    <string name = "no"> No Questions asked.</string>
+
+    <string name ="be"> Be the first one to ask question.</string>
+
     <!-- strings.xml -->
     <string name="what_do_you">
 

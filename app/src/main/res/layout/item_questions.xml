@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_questions"
+    android:layout_width="match_parent"
+    android:layout_height="221dp">
+
+    <!--Relative layout QandA-->
+    <RelativeLayout
+        android:id="@+id/relative_layout_questions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--Linear Layout name and time-->
+        <LinearLayout
+            android:id="@+id/linear_layout_name_and_time"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+            <!--Text View name-->
+            <TextView
+                android:id="@+id/text_view_name"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginStart="24dp"
+                android:lineSpacingExtra="1sp"
+                android:text="Mr John Doe"
+                android:fontFamily="@font/inter_semi_bold"
+                android:textSize="12sp"
+                android:letterSpacing="-0.03"
+                android:textColor="@color/black"
+                />
+            <!--Text View time-->
+            <TextView
+                android:id="@+id/text_view_time"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:lineSpacingExtra="3sp"
+                android:layout_marginStart="24dp"
+                android:text="4 hrs ago"
+                android:fontFamily="@font/inter_semi_bold"
+                android:textSize="11sp"
+                android:letterSpacing="-0.04"
+                android:textColor="@color/gray"
+                />
+        </LinearLayout>
+        <!--Text view question-->
+        <TextView
+            android:id="@+id/text_view_question"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:lineSpacingExtra="4sp"
+            android:gravity="center_vertical"
+            android:text="Why Nepal does not have apps related to laws and human right?"
+            android:fontFamily="@font/inter_semi_bold"
+            android:textSize="15sp"
+            android:letterSpacing="-0.03"
+            android:textColor="@color/black"
+            />
+        <!--Text view answer-->
+        <TextView
+            android:id="@+id/text_view_answer"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="102dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:lineSpacingExtra="4sp"
+            android:gravity="center_vertical"
+            android:text="There are apps related to laws and human rights. You can find them on play store."
+            android:fontFamily="@font/inter_regular"
+            android:textSize="15sp"
+            android:letterSpacing="-0.03"
+            android:textColor="@color/gray2"
+            />
+        <!--Linear layout button-->
+        <LinearLayout
+            android:id="@+id/linear_layout_button"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_below="@+id/text_view_answer"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/image_button_thumbs_up1"
+                android:layout_width="17.75dp"
+                android:layout_height="21.18dp"
+                android:layout_marginStart="24dp"
+                app:srcCompat="@drawable/thumbsup"
+                />
+
+            <ImageButton
+                android:id="@+id/image_button_thumbs_up2"
+                android:layout_width="17.75dp"
+                android:layout_height="21.18dp"
+                android:layout_marginStart="24dp"
+                app:srcCompat="@drawable/thumbsup2"
+                android:visibility="gone"
+                />
+
+            <ImageButton
+                android:id="@+id/image_button_share1"
+                android:layout_width="17.75dp"
+                android:layout_height="21.18dp"
+                android:layout_marginStart="24dp"
+                app:srcCompat="@drawable/share"
+                />
+
+
+            <ImageButton
+                android:id="@+id/image_button_bookmark2"
+                android:layout_width="17.75dp"
+                android:layout_height="21.18dp"
+                android:layout_marginStart="194dp"
+                app:srcCompat="@drawable/bookmark2"
+                />
+
+            <ImageButton
+                android:id="@+id/image_button_bookmark1"
+                android:layout_width="17.75dp"
+                android:layout_height="21.18dp"
+                android:layout_marginStart="24dp"
+                app:srcCompat="@drawable/bookmark"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>
