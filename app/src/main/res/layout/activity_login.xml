@@ -39,7 +39,6 @@
             android:textColor="@color/primary_black"
             android:textSize="17sp"
             android:theme="@style/MyEditTextTheme"
-
             app:layout_constraintEnd_toEndOf="@+id/login_heading"
             app:layout_constraintStart_toStartOf="@+id/login_heading"
             app:layout_constraintTop_toBottomOf="@+id/login_heading" />
