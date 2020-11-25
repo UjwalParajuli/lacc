@@ -56,5 +56,9 @@ What do you want to
         ask?
 </string>
 
+    <string name = "no">No Questions asked.</string>
+
+    <string name = "be">Be the first one to ask question.</string>
+
 
 </resources>
