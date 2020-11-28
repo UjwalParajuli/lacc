@@ -31,7 +31,7 @@
     <string name="sign_up">Sign Up with Mobile Number</string>
     <string name="continue_as_guest">Continue as Guest</string>
     <string name="already_account">Already have account? <font color='#01009A'> <u>Log In</u></font></string>
-    <string name="new_signup">New to LACC Nepal <font color='#01009A'> <u>Sign Up</u></font></string>
+    <string name="new_signup">New to LACC Nepal? <font color='#01009A'> <u>Sign Up</u></font></string>
     <string name="verification_code_resend">Did not Receive! <font color='#01009A'> <u> Resend</u></font></string>
     <string name="sign_up_heading">Please provide your <b>information.</b></string>
     <string name="verification_code_heading">Please enter Code below</string>
@@ -65,6 +65,10 @@
 What do you want to
         ask?
 </string>
+
+    <string name = "no">No Questions asked.</string>
+
+    <string name = "be">Be the first one to ask question.</string>
 
 
 </resources>
