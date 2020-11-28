@@ -36,8 +36,17 @@
     <string name="sign_up_heading">Please provide your <b>information.</b></string>
     <string name="verification_code_heading">Please enter Code below</string>
     <string name="phone_code_request_heading">Please enter your phone number</string>
+    <string name="settings_edit_profile">Edit Profile</string>
+    <string name="settings_interface">Interface</string>
+    <string name="settings_bookmark">Bookmarked posts</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_language_english">English</string>
+    <string name="settings_notification">Notification</string>
+    <string name="settings_dark_mode">Dark mode</string>
+
+
+
     <string name="phone_code_request_button">Send Code</string>
-    Send Code
     <string name="full_name_hint">Enter your Full Name</string>
     <string name="phone_number_hint">Enter your Phone Number</string>
     <string name="password_hint">Password</string>

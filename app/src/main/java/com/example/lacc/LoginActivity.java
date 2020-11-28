@@ -23,19 +23,14 @@ public class LoginActivity extends AppCompatActivity {
         newsignup=findViewById(R.id.login_text_view_newsignup);
 
 
-        String text = "Already have account? Log In";
-
-        SpannableString ss = new SpannableString(text);
-        ClickableSpan clickableSpan1 = new ClickableSpan() {
+        newsignup=findViewById(R.id.login_text_view_newsignup);
+        newsignup.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(@NonNull View view) {
-                Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
+            public void onClick(View view) {
+                Intent intent=new Intent(LoginActivity.this,SignUpActivity.class);
                 startActivity(intent);
                 finish();
             }
-        };
-        ss.setSpan(clickableSpan1, 18, 25, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-        newsignup.setText(ss);
-        newsignup.setMovementMethod(LinkMovementMethod.getInstance());
+        });
     }
 }

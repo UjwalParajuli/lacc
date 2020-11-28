@@ -12,9 +12,13 @@
         <activity android:name=".SplashScreenActivity"></activity>
         <activity android:name=".OnBoardingActivity" />
         <activity android:name=".SelectLanguageActivity" />
-        <activity android:name=".SignUpActivity" />
+        <activity android:name=".SignUpActivity" >
+
+        </activity>
         <activity android:name=".WelcomeActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity" >
+
+        </activity>
         <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +26,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".LoginActivity" >
+
+        </activity>
         <activity android:name=".VerificationCodeActivity" />
         <activity android:name=".PhoneNumberActivity" />
         <activity android:name=".PhoneCodeRequestActivity" />
