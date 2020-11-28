@@ -56,9 +56,13 @@ What do you want to
         ask?
 </string>
 
-    <string name = "no">No Questions asked.</string>
+    <string name="no">No Questions asked.</string>
 
-    <string name = "be">Be the first one to ask question.</string>
+    <string name="be">Be the first one to ask question.</string>
+
+    <string name = "noNotificationYet">No Notification yet.</string>
+
+    <string name = "youWillFindNotificationhere">You will find your notifications here about the questions you have asked, and other information.</string>
 
 
 </resources>
