@@ -21,8 +21,7 @@ import android.widget.Toast;
 
 public class SignUpActivity extends AppCompatActivity {
 
-//    EditText ETfullname, ETphonenumber, ETpassword;
-//    Button Btncreateaccount;
+
     TextView Alreadylogin;
 
     @Override
@@ -37,20 +36,14 @@ public class SignUpActivity extends AppCompatActivity {
 //        Btncreateaccount = findViewById(R.id.signup_button_createaccount);
 
         //for clickable
-        String text = "Already have account? Log In";
-
-        SpannableString ss = new SpannableString(text);
-        ClickableSpan clickableSpan1 = new ClickableSpan() {
+        Alreadylogin.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(@NonNull View view) {
-                Intent intent = new Intent(SignUpActivity.this, LoginActivity.class);
+            public void onClick(View view) {
+                Intent intent=new Intent(SignUpActivity.this,LoginActivity.class);
                 startActivity(intent);
                 finish();
             }
-        };
-        ss.setSpan(clickableSpan1, 21, 28, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-        Alreadylogin.setText(ss);
-        Alreadylogin.setMovementMethod(LinkMovementMethod.getInstance());
+        });
 
 
         //for button

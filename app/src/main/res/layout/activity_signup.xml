@@ -115,7 +115,7 @@
             android:textColor="@color/black"
             android:textSize="13sp"
             android:translationY="-1.13sp"
-            android:fontFamily="@font/inter_semi_bold"
+            android:fontFamily="@font/inter_regular"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/signup_button_create_account"
             app:layout_constraintStart_toStartOf="@+id/signup_button_create_account"
