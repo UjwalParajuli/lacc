@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">LACC</string>
     <string name="app_logo">LACC Logo</string>
@@ -15,15 +16,15 @@
     <string name="text_continue">Continue</string>
     <string name="settings_heading">Settings</string>
     <string name="settings_account">Account</string>
-    <string name="onboard_heading_first">All Law Information</string>
-    <string name="onboard_content_first">Provisions related to women, legal identity, birth and citizenship, polygamy and child marriage, etc.</string>
+    <string name="onboard_heading_first">सबै कानून जानकारी</string>
+    <string name="onboard_content_first">महिला, कानूनी पहिचान, जन्म र नागरिकता, बहुविवाह र बाल विवाह, आदि सम्बन्धित प्रावधानहरू।</string>
     <string name="onboard_heading_second">Queston &amp; Answer</string>
     <string name="onboard_content_second">User can ask question and get appropriate answers from LACC support teams.</string>
     <string name="onboard_heading_third">Chat</string>
     <string name="onboard_content_third">LACC reply the queries of user instantly by chat support</string>
     <string name="next_button">Next</string>
     <string name="start_button">Start</string>
-    <string name="lacc_nepal">LACC Nepal</string>
+    <string name="lacc_nepal">एल.ए.सी.सी नेपाल</string>
     <string name="signup_button">Create Account</string>
     <string name="forgot_pass">Forgot Password?</string>
     <string name="login_button">Login</string>
@@ -44,6 +45,8 @@
     <string name="settings_notification">Notification</string>
     <string name="settings_dark_mode">Dark mode</string>
 
+
+
     <string name="phone_code_request_button">Send Code</string>
     <string name="full_name_hint">Enter your Full Name</string>
     <string name="phone_number_hint">Enter your Phone Number</string>
@@ -57,7 +60,12 @@
     <string name="cancel">Cancel</string>
     <string name="post">Post</string>
 
-    <string name="what_do_you">What do you want to ask?</string>
+    <!-- strings.xml -->
+    <string name="what_do_you">
+
+What do you want to
+        ask?
+</string>
 
     <string name="no">No Questions asked.</string>
 
@@ -66,6 +74,4 @@
     <string name = "noNotificationYet">No Notification yet.</string>
 
     <string name = "youWillFindNotificationhere">You will find your notifications here about the questions you have asked, and other information.</string>
-
-
 </resources>
