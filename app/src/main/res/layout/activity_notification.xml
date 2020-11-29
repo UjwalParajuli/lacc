@@ -8,14 +8,9 @@
 
 
 
-    <androidx.appcompat.widget.Toolbar
+    <include
         android:id="@+id/toolbar_notification"
-        android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:background="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints" />
+        layout="@layout/toolbar_notification" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
@@ -38,7 +33,7 @@
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/text_view_no_notification_yet"
+            android:id="@+id/text_view_no_messages_yet"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="46.45dp"
@@ -70,7 +65,7 @@
             android:gravity="center_horizontal|center_vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/text_view_no_notification_yet" />
+            app:layout_constraintTop_toBottomOf="@id/text_view_no_messages_yet" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

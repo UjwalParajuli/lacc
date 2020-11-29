@@ -45,7 +45,6 @@
     <string name="settings_dark_mode">Dark mode</string>
 
 
-
     <string name="phone_code_request_button">Send Code</string>
     <string name="full_name_hint">Enter your Full Name</string>
     <string name="phone_number_hint">Enter your Phone Number</string>
@@ -70,9 +69,23 @@ What do you want to
 
     <string name="be">Be the first one to ask question.</string>
 
-    <string name = "noNotificationYet">No Notification yet.</string>
+    <string name="noNotificationYet">No Notification yet.</string>
 
-    <string name = "youWillFindNotificationhere">You will find your notifications here about the questions you have asked, and other information.</string>
+    <string name="youWillFindNotificationhere">You will find your notifications here about the questions you have asked, and other information.</string>
 
+    <string name="notification">Notifications</string>
+
+    <string name ="chat">Chat</string>
+
+    <string name ="noMessagesYet">No messages yet</string>
+
+    <string name="weRequestYouToPost">We request to post question firstly on the question and answer
+        page, so that most people find their answer publicly.</string>
+
+    <string name ="registerPlease">Register Please</string>
+
+    <string name ="itIsMandatory">It is mandatory to register your account to start chat.</string>
+
+    <string name ="writeYourMessagehere">Write your message here...</string>
 
 </resources>

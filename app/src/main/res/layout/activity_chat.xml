@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <include
+        android:id="@+id/toolbar_chat"
+        layout="@layout/toolbar_chat" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66.88dp"
+        app:layout_constraintEnd_toEndOf="@id/toolbar_chat"
+        app:layout_constraintStart_toStartOf="@id/toolbar_chat"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_chat"
+        android:visibility="gone"
+
+        >
+        <ImageView
+            android:id="@+id/image_view_chatBubble"
+            android:layout_width="122.54dp"
+            android:layout_height="110.26dp"
+            android:gravity="center"
+            app:srcCompat="@drawable/chatbubble"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/text_view_no_messages_yet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="53dp"
+            android:fontFamily="@font/inter_semi_bold"
+            android:letterSpacing="0.04"
+            android:lineSpacingExtra="1sp"
+            android:translationY="-0.69sp"
+            android:text="@string/noMessagesYet"
+            android:textColor="@color/primary_blue"
+            android:textSize="22sp"
+            android:gravity="center_horizontal|center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_view_chatBubble" />
+
+        <TextView
+            android:id="@+id/text_view_we_request_to_post_your_question"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/inter_regular"
+            android:letterSpacing="0"
+            android:lineSpacingExtra="1sp"
+            android:translationY="-0.71sp"
+            android:text="@string/weRequestYouToPost"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:gravity="center_horizontal|center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_view_no_messages_yet" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="@id/toolbar_chat"
+        app:layout_constraintStart_toStartOf="@id/toolbar_chat"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_chat"
+        android:visibility="gone"
+
+        >
+        <ImageView
+            android:id="@+id/image_view_registerImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:srcCompat="@drawable/registerimg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/text_view_register_please"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="53dp"
+            android:fontFamily="@font/inter_semi_bold"
+            android:letterSpacing="0.04"
+            android:lineSpacingExtra="1sp"
+            android:translationY="-0.69sp"
+            android:text="@string/registerPlease"
+            android:textColor="@color/primary_blue"
+            android:textSize="22sp"
+            android:gravity="center_horizontal|center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_view_registerImg" />
+
+        <TextView
+            android:id="@+id/text_view_it_is_mandatory_to_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/inter_regular"
+            android:letterSpacing="0"
+            android:lineSpacingExtra="1sp"
+            android:translationY="-0.71sp"
+            android:text="@string/itIsMandatory"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:gravity="center_horizontal|center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_view_register_please" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/edit_text_ask_question"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="31dp"
+        android:background="@drawable/frame2"
+        android:fontFamily="@font/inter_semi_bold"
+        android:hint="@string/writeYourMessagehere"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="1sp"
+        android:paddingStart="24dp"
+        android:paddingEnd="16dp"
+        android:textSize="17sp"
+        android:focusable="false"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar_chat"
+        app:layout_constraintStart_toStartOf="@id/toolbar_chat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
