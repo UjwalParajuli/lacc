@@ -82,7 +82,7 @@ What do you want to
 
     <string name="itIsMandatory" translatable="false" tools:ignore="DuplicateDefinition">It is mandatory to register your account to start chat. </string>
 
-    <string name="writeYourMessagehere" translatable="false" tools:ignore="DuplicateDefinition">Write your message here.</string>
+    <string name="writeYourMessagehere" translatable="false" tools:ignore="DuplicateDefinition">Write your message here...</string>
 
     <string name="chat" translatable="false" tools:ignore="DuplicateDefinition">Chat</string>
 
@@ -91,6 +91,10 @@ What do you want to
     <string name="bookmarked" translatable="false" tools:ignore="DuplicateDefinition">Bookmarked</string>
 
     <string name="bookmarkBack" translatable="false" tools:ignore="DuplicateDefinition">Back</string>
+
+    <string name="editProfile" translatable="false" tools:ignore="DuplicateDefinition">Edit Profile</string>
+
+    <string name="editProfileChangeBtn" translatable="false" tools:ignore="DuplicateDefinition">Change</string>
 
 
 </resources>

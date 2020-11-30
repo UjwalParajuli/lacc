@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LACC">
-        <activity android:name=".BookmarkActivity"></activity>
+        <activity android:name=".EditProfileActivity"></activity>
+        <activity android:name=".BookmarkActivity" />
         <activity android:name=".NotificationActivity" />
         <activity android:name=".SplashScreenActivity">
             <intent-filter>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_editProfile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <ImageView
+        android:id="@+id/image_view_back_btn_Bookmark"
+        android:layout_width="11.98dp"
+        android:layout_height="20.79dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/backbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/backBookmark"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginStart="25.98dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/bookmarkBack"
+        android:fontFamily="@font/inter_regular"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="2sp"
+        android:translationY="-0.86sp"
+        android:textColor="@color/system_blue_light"
+        android:textSize="17sp"
+        android:gravity="center_horizontal|top"
+        />
+
+    <TextView
+        android:id="@+id/bookmarkTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="72.52dp"
+        android:layout_marginEnd="136.5dp"
+        android:text="@string/editProfile"
+        android:fontFamily="@font/inter_semi_bold"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="2sp"
+        android:translationY="-0.86sp"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:gravity="center_horizontal|top"
+        />
+</androidx.appcompat.widget.Toolbar>
