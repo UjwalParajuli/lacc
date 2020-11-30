@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_questions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="7dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            >
+
+        <TextView
+            android:id="@+id/text_view_questionBookmark"
+            android:layout_width="327dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inter_semi_bold"
+            android:lineSpacingExtra="1sp"
+            android:text="123456789oijhvdstyuijkfgfhjvbfhhkkdghjn"
+            android:textSize="15sp"
+            android:letterSpacing="-0.03"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/image_view_more"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            app:srcCompat="@drawable/more"
+            app:layout_constraintBottom_toBottomOf="@+id/text_view_questionBookmark"
+            app:layout_constraintStart_toEndOf="@+id/text_view_questionBookmark"
+            app:layout_constraintTop_toTopOf="@+id/text_view_questionBookmark"
+             />
+
+            <TextView
+                android:id="@+id/text_view_answerBookmark"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="62dp"
+                android:lineSpacingExtra="4sp"
+                android:gravity="center_vertical"
+                android:text="gfagvcghjkgfcjfwyuejh3c4uwrnvvntt5ghfb erhjfhr  rguefhjoi; tu"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="15sp"
+                android:letterSpacing="-0.03"
+                app:layout_constraintStart_toStartOf="@+id/image_view_more"
+                app:layout_constraintTop_toBottomOf="@+id/image_view_more"
+                android:textColor="@color/popup_question_text"/>
+
+            <TextView
+                android:id="@+id/text_view_timeBookmark"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="273dp"
+                android:lineSpacingExtra="4sp"
+                android:gravity="center_vertical"
+                android:text="Save 4 days ago."
+                android:fontFamily="@font/inter_regular"
+                android:textSize="10sp"
+                android:letterSpacing="-0.02"
+                app:layout_constraintStart_toStartOf="@+id/text_view_answerBookmark"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_answerBookmark"
+                android:textColor="@color/popup_question_text"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
