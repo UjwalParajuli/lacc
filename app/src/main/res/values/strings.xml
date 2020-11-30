@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">LACC</string>
     <string name="app_logo">LACC Logo</string>
     <string name="app_full_name">Legal Aid and Consultancy Center</string>
@@ -66,6 +66,7 @@ What do you want to
         ask?
 </string>
 
+
     <string name="no">No Questions asked.</string>
 
     <string name="be">Be the first one to ask question.</string>
@@ -73,6 +74,22 @@ What do you want to
     <string name = "noNotificationYet">No Notification yet.</string>
 
     <string name = "youWillFindNotificationhere">You will find your notifications here about the questions you have asked, and other information.</string>
+
+    <string name="noMessageYet" tools:ignore="DuplicateDefinition" translatable="false">No Message yet.</string>
+
+    <string name="weRequestYouToPost" tools:ignore="DuplicateDefinition" translatable="false">We request to post question firstly on the question and answer page, so that most people find their answer publicly.</string>
+
+    <string name="registerPlease" tools:ignore="DuplicateDefinition" translatable="false">Register, Please.</string>
+
+    <string name="itIsMandatory" tools:ignore="DuplicateDefinition" translatable="false">It is mandatory to register your account to start chat. </string>
+
+    <string name="writeYourMessagehere" tools:ignore="DuplicateDefinition" translatable="false">Write your message here.</string>
+
+    <string name="chat" tools:ignore="DuplicateDefinition" translatable="false">Chat</string>
+
+    <string name="notification" tools:ignore="DuplicateDefinition" translatable="false">Notification</string>
+
+
 
 
 </resources>
