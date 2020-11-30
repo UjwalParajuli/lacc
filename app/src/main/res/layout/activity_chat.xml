@@ -145,7 +145,4 @@
         app:layout_constraintStart_toStartOf="@id/toolbar_chat"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:ignore="MissingConstraints"/>
-
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
