@@ -96,5 +96,9 @@ What do you want to
 
     <string name="editProfileChangeBtn" translatable="false" tools:ignore="DuplicateDefinition">Change</string>
 
+    <string name="searchContent" translatable="false" tools:ignore="DuplicateDefinition">Search content ...</string>
+
+
+
 
 </resources>

@@ -18,7 +18,7 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        EditText edit_text_ask_question = view.findViewById(R.id.edit_text_ask_question);
+        EditText edit_text_ask_question = view.findViewById(R.id.search_content_read);
 
         edit_text_ask_question.setOnClickListener(new View.OnClickListener() {
             @Override
