@@ -11,8 +11,6 @@
         android:id="@+id/toolbar_read_law_details"
         layout="@layout/toolbar_read_law_details" />
 
-
-
     <TextView
         android:id="@+id/tv_law_read_details_question"
         android:layout_width="wrap_content"
@@ -20,7 +18,7 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:style="@style/font_regular"
+        android:theme="@style/font_regular"
         android:gravity="center"
         android:letterSpacing="0"
         android:lineSpacingExtra="1sp"
@@ -38,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
         android:layout_marginEnd="38dp"
-        android:style="@style/font_regular"
+        android:theme="@style/font_regular"
         android:letterSpacing="0"
         android:lineSpacingExtra="1sp"
         android:text="sambhidhan vaneko desh ko mul kanun ho"
@@ -84,14 +82,4 @@
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-
-
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-

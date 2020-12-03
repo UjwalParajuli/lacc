@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/alert_box_background"
+    app:backgroundTint="@null"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/image_view_sheet_handler_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_bottm_sheet_handle" />
+
+    <TextView
+        android:id="@+id/text_view_sheet_setting_nepali"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="26dp"
+        android:drawablePadding="14dp"
+        android:fontFamily="@font/arap_bk_regular"
+        android:gravity="center_vertical"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="2sp"
+        android:text="@string/button_nepali"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:translationY="-0.86sp"
+        app:drawableEndCompat="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_sheet_handler_language" />
+
+    <View
+        android:id="@+id/divider_nepali"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bottom_border_setting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/text_view_sheet_setting_nepali"
+        app:layout_constraintTop_toBottomOf="@id/text_view_sheet_setting_nepali" />
+
+    <TextView
+        android:id="@+id/text_view_sheet_setting_english"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="26dp"
+        android:drawablePadding="14dp"
+        android:fontFamily="@font/sf_pro_text_regular"
+        android:gravity="center_vertical"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="2sp"
+        android:text="@string/button_english"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:translationY="-0.86sp"
+        app:drawableEndCompat="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_nepali" />
+
+    <View
+        android:id="@+id/divider_english"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bottom_border_setting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/text_view_sheet_setting_english"
+        app:layout_constraintTop_toBottomOf="@id/text_view_sheet_setting_english" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

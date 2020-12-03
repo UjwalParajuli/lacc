@@ -9,10 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LACC">
-        <activity android:name=".QuestionAndAnswerDetailActivity"></activity>
-        <activity android:name=".LawReadDetailActivity" />
-        <activity android:name=".LawReadActivity" />
-        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".EditProfileActivity"/>
         <activity android:name=".BookmarkActivity" />
         <activity android:name=".NotificationActivity" />
         <activity android:name=".SplashScreenActivity">
@@ -26,12 +23,12 @@
         <activity android:name=".SelectLanguageActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".WelcomeActivity" />
-        <activity android:name=".MainActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".VerificationCodeActivity" />
         <activity android:name=".PhoneNumberActivity" />
         <activity android:name=".PhoneCodeRequestActivity" />
+        <activity android:name=".ChatActivity"/>
     </application>
 
 </manifest>

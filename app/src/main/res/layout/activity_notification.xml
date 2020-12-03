@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/fragment_background"
     tools:context=".NotificationActivity">
-
-
 
     <include
         android:id="@+id/toolbar_notification"
-        layout="@layout/toolbar_notification" />
+        layout="@layout/toolbar_notification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
@@ -19,17 +21,19 @@
         app:layout_constraintEnd_toEndOf="@id/toolbar_notification"
         app:layout_constraintStart_toStartOf="@id/toolbar_notification"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_notification"
-        android:visibility="gone"
+        android:visibility="visible"
         >
+
         <ImageView
             android:id="@+id/image_view_message"
-            android:layout_width="79.39dp"
-            android:layout_height="79.21dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:gravity="center"
-            app:srcCompat="@drawable/bellicon"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
 
+            app:srcCompat="@drawable/bellicon"
             tools:ignore="MissingConstraints" />
 
         <TextView
@@ -78,7 +82,7 @@
         app:layout_constraintEnd_toEndOf="@id/toolbar_notification"
         app:layout_constraintStart_toStartOf="@id/toolbar_notification"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_notification"
-        />
+        tools:visibility="gone" />
 
 
 

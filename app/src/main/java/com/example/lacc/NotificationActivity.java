@@ -1,9 +1,10 @@
 package com.example.lacc;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
-import android.widget.Toolbar;
+
 
 public class NotificationActivity extends AppCompatActivity {
 
@@ -12,11 +13,18 @@ public class NotificationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification);
 
-        Toolbar toolbar = findViewById(R.id.toolbar_notification);
+        Toolbar toolbar_notification = findViewById(R.id.toolbar_notification);
+        setSupportActionBar(toolbar_notification);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
     }
 
 
-
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
 
 }

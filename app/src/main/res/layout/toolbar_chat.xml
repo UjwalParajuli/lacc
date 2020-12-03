@@ -1,39 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/toolbar_chat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:elevation="4dp"
+        android:background="@color/toolbar_background"
+        app:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
-        <ImageView
-            android:id="@+id/image_view_chatBtn"
-            android:layout_width="11.98dp"
-            android:layout_height="20.79dp"
-            android:layout_marginStart="6dp"
-            android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/backbtn"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/chatTitle"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_marginStart="147.52dp"
-            android:layout_marginEnd="168.5dp"
-            android:layout_height="22dp"
-            android:text="@string/chat"
-            android:fontFamily="@font/inter_semi_bold"
-            android:letterSpacing="-0.02"
-            android:lineSpacingExtra="2sp"
-            android:translationY="-0.86sp"
-            android:textColor="@color/black"
-            android:textSize="17sp"
-            android:gravity="center_horizontal|top"
-            />
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/chat_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_semi_bold"
+                android:gravity="center"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="2sp"
+                android:text="@string/chat"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:translationY="-0.86sp"
+                android:layout_marginEnd="?android:attr/actionBarSize"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.appcompat.widget.Toolbar>
 
