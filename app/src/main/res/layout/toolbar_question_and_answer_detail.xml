@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/toolbar_editProfile"
+    android:id="@+id/toolbar_question_and_answer_detail"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="88dp"
     android:background="@color/white"
     android:elevation="4dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
     app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
     <ImageView
-        android:id="@+id/image_view_back_btn_lawRead"
+        android:id="@+id/image_view_back_btn_question_and_answer_detail"
         android:layout_width="11.98dp"
         android:layout_height="20.79dp"
         android:layout_marginStart="6dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/backLawRead"
+        android:id="@+id/back_question_and_answer_detail"
         android:layout_width="wrap_content"
         android:layout_height="22dp"
         android:layout_marginStart="25.98dp"
@@ -36,13 +36,13 @@
         />
 
     <TextView
-        android:id="@+id/law_read_title"
+        android:id="@+id/title_question_and_answer"
         android:layout_width="wrap_content"
         android:layout_height="22dp"
         android:layout_marginTop="10dp"
-        android:layout_marginStart="72.52dp"
-        android:layout_marginEnd="136.5dp"
-        android:text="@string/editProfile"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="79dp"
+        android:text="Why Nepal does not have.... "
         android:fontFamily="@font/inter_semi_bold"
         android:letterSpacing="-0.02"
         android:lineSpacingExtra="2sp"

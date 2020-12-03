@@ -35,7 +35,7 @@
                 tools:ignore="MissingConstraints" />
 
             <TextView
-                android:id="@+id/text_view_name"
+                android:id="@+id/text_view_law_question"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
@@ -61,9 +61,9 @@
                 android:textSize="11sp"
                 android:letterSpacing="-0.04"
                 android:textColor="@color/gray"
-                app:layout_constraintBottom_toBottomOf="@+id/text_view_name"
-                app:layout_constraintStart_toEndOf="@+id/text_view_name"
-                app:layout_constraintTop_toTopOf="@+id/text_view_name"
+                app:layout_constraintBottom_toBottomOf="@+id/text_view_law_question"
+                app:layout_constraintStart_toEndOf="@+id/text_view_law_question"
+                app:layout_constraintTop_toTopOf="@+id/text_view_law_question"
                 />
 
             <!--Text view question-->

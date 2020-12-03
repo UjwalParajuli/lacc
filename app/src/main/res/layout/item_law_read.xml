@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_law_questions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/cardviewFillLawRead"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            >
+
+
+
+            <TextView
+                android:id="@+id/text_view_law_question"
+                android:layout_width="298dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="61dp"
+                android:fontFamily="@font/ ARAPBK"
+                android:lineSpacingExtra="1sp"
+                android:text="egfhbhjvneabjvhfhrejgf"
+                android:textSize="20sp"
+                android:letterSpacing="-0.02"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                />
+
+            <ImageView
+                android:id="@+id/image_view_read_downBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="19.5dp"
+                android:layout_marginBottom="18dp"
+                android:layout_marginEnd="3dp"
+                app:srcCompat="@drawable/downbtn"
+                app:layout_constraintBottom_toBottomOf="@+id/text_view_law_question"
+                app:layout_constraintStart_toEndOf="@+id/text_view_law_question"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/text_view_law_question"
+                tools:ignore="MissingConstraints" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

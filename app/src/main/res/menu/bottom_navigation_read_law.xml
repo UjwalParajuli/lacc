@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_content"
+        android:icon="@drawable/bulletlist"
+        android:title="@string/nav_content" />
+    <item
+        android:id="@+id/nav_play"
+        android:icon="@drawable/play"
+        android:title="@string/nav_play" />
+    <item
+        android:id="@+id/nav_manage"
+        android:icon="@drawable/manage"
+        android:title="@string/nav_manage" />
+</menu>

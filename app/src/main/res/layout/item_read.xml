@@ -38,7 +38,7 @@
             tools:ignore="MissingConstraints" />
 
             <TextView
-                android:id="@+id/text_view_name"
+                android:id="@+id/text_view_law_question"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8.87dp"
@@ -60,7 +60,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    </androidx.cardview.widget.CardView>>
+    </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

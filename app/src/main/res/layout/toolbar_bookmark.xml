@@ -10,7 +10,7 @@
     app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
     <ImageView
-        android:id="@+id/image_view_back_btn_Bookmark"
+        android:id="@+id/image_view_back_btn_lawRead"
         android:layout_width="11.98dp"
         android:layout_height="20.79dp"
         android:layout_marginStart="6dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/backBookmark"
+        android:id="@+id/backLawRead"
         android:layout_width="wrap_content"
         android:layout_height="22dp"
         android:layout_marginStart="25.98dp"
@@ -36,7 +36,7 @@
         />
 
     <TextView
-        android:id="@+id/bookmarkTitle"
+        android:id="@+id/law_read_title"
         android:layout_width="wrap_content"
         android:layout_height="22dp"
         android:layout_marginTop="10dp"

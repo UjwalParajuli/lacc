@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionAndAnswerDetailActivity">
+
+    <include
+        android:id="@+id/toolbar_question_and_answer_detail"
+        layout="@layout/toolbar_question_and_answer_detail" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="84dp">
+
+
+
+        <TextView
+            android:id="@+id/text_view_law_question"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/inter_semi_bold"
+            android:lineSpacingExtra="4sp"
+            android:text="Why Nepal does not have apps related to laws and human right?"
+            android:textSize="15sp"
+            android:letterSpacing="-0.03"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/toolbar_question_and_answer_detail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="NotSibling" />
+
+        <ImageView
+            android:id="@+id/image_view_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/person"
+            app:layout_constraintStart_toEndOf="@+id/text_view_law_question"
+            app:layout_constraintStart_toStartOf="@+id/text_view_law_question"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_law_question"
+             />
+
+        <TextView
+            android:id="@+id/users_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:fontFamily="@font/inter_semi_bold"
+            android:lineSpacingExtra="1sp"
+            android:text="Mr John Doe"
+            android:textSize="12sp"
+            android:letterSpacing="-0.03"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/image_view_icon"
+            app:layout_constraintStart_toEndOf="@+id/image_view_icon"
+            app:layout_constraintTop_toTopOf="@+id/image_view_icon"
+            />
+
+        <TextView
+            android:id="@+id/text_view_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3sp"
+            android:layout_marginStart="24dp"
+            android:text="4 hrs ago"
+            android:fontFamily="@font/inter_semi_bold"
+            android:textSize="11sp"
+            android:letterSpacing="-0.04"
+            android:textColor="@color/gray"
+            app:layout_constraintBottom_toBottomOf="@+id/users_name"
+            app:layout_constraintStart_toEndOf="@+id/users_name"
+            app:layout_constraintTop_toTopOf="@+id/users_name"
+            />
+
+        <TextView
+            android:id="@+id/text_view_answer"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:lineSpacingExtra="4sp"
+            android:text="There are apps related to laws and human rights. You can find them on play store."
+            android:fontFamily="@font/inter_regular"
+            android:textSize="15sp"
+            android:letterSpacing="-0.03"
+            android:textColor="@color/gray2"
+            app:layout_constraintStart_toStartOf="@+id/image_view_icon"
+            app:layout_constraintTop_toBottomOf="@+id/image_view_icon"
+            />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation_question_and_answer_detail"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_navigation_question_and_answer_detail"
+            >
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

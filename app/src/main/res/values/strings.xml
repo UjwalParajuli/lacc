@@ -104,7 +104,21 @@ What do you want to
 
     <string name="searchContent" translatable="false" tools:ignore="DuplicateDefinition">Search content ...</string>
 
+    <string name="read" translatable="false" tools:ignore="DuplicateDefinition">Read</string>
 
+    <string name="lawReadDetailsTitle" translatable="false" tools:ignore="DuplicateDefinition">संविधान</string>
+
+    <string name="nav_content" translatable="false" tools:ignore="DuplicateDefinition">Content</string>
+
+    <string name="nav_play" translatable="false" tools:ignore="DuplicateDefinition">Play</string>
+
+    <string name="nav_manage" translatable="false" tools:ignore="DuplicateDefinition">Manage</string>
+
+    <string name="nav_like" translatable="false" tools:ignore="DuplicateDefinition">Like</string>
+
+    <string name="nav_share" translatable="false" tools:ignore="DuplicateDefinition">Share</string>
+
+    <string name="nav_bookmark" translatable="false" tools:ignore="DuplicateDefinition">Bookmark</string>
 
 
 </resources>
