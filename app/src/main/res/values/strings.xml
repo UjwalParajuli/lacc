@@ -38,11 +38,17 @@
     <string name="phone_code_request_heading">Please enter your phone number</string>
     <string name="settings_edit_profile">Edit Profile</string>
     <string name="settings_interface">Interface</string>
-    <string name="settings_bookmark">Bookmarked posts</string>
+    <string name="settings_bookmark">Bookmarked Posts</string>
     <string name="settings_language">Language</string>
     <string name="settings_language_english">English</string>
     <string name="settings_notification">Notification</string>
-    <string name="settings_dark_mode">Dark mode</string>
+    <string name="settings_dark_mode">Dark Mode</string>
+    <string name="settings_support">Support</string>
+    <string name="about">About</string>
+    <string name="share">Share</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="terms">Terms &amp; Conditions </string>
+    <string name="logout">Logout</string>
 
 
     <string name="phone_code_request_button">Send Code</string>

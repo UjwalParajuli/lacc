@@ -92,7 +92,7 @@
        app:layout_constraintBottom_toBottomOf="@+id/home_notification"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintTop_toTopOf="@+id/home_notification"
-       app:srcCompat="@drawable/send" />
+       app:srcCompat="@drawable/ic_send" />
 
     <!-- Recent Questions -->
    <TextView

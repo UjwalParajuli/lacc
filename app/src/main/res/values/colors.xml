@@ -16,7 +16,8 @@
     <color name="linear_gradient_1">#7480EA</color>
     <color name="linear_gradient_2">#D092EE</color>
     <color name="manage_button">#0935B0</color>
-    <color name="systemGreen_light">#34C759</color>
+    <color name="switch_green_light">#34C759</color>
+    <color name="switch_gray_light">#29787880</color>
     <color name="label_light_secondary">#3C3C43</color>
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
@@ -24,6 +25,7 @@
     <color name="settings_side">#993C3C43</color>
     <color name="settings_text_view">#80000000</color>
     <color name="setting_background">#FAFAFA</color>
+    <color name="logout_red">#FA4169</color>
 
 
     <color name="popup_question_text">#BF000000</color>
