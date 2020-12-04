@@ -49,6 +49,15 @@
     <string name="privacy">Privacy Policy</string>
     <string name="terms">Terms &amp; Conditions </string>
     <string name="logout">Logout</string>
+    <string name="create">Create account.</string>
+    <string name="you_need_to">You need to create account before asking question.</string>
+    <string name="create_now">Create Now</string>
+    <string name="are_your_sure">Are you sure, you want to delete?</string>
+    <string name="deleted_bookmarked">Deleted Bookmarked will no longer be available</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="register_now">Register Now</string>
+    <string name="copy_link">Copy Link</string>
 
 
     <string name="phone_code_request_button">Send Code</string>
@@ -61,7 +70,6 @@
     <string name="lacc"> LACC </string>
     <string name="home_edit_text_hint">Type your question here.</string>
     <string name="recent_questions">Recent questions</string>
-    <string name="cancel">Cancel</string>
     <string name="post">Post</string>
 
     <!-- strings.xml -->
@@ -80,29 +88,29 @@ What do you want to
 
     <string name="youWillFindNotificationhere">You will find your notifications here about the questions you have asked, and other information.</string>
 
-    <string name="noMessageYet" translatable="false" tools:ignore="DuplicateDefinition">No Message yet.</string>
+    <string name="noMessageYet">No Message yet.</string>
 
-    <string name="weRequestYouToPost" translatable="false" tools:ignore="DuplicateDefinition">We request to post question firstly on the question and answer page, so that most people find their answer publicly.</string>
+    <string name="weRequestYouToPost">We request to post question firstly on the question and answer page, so that most people find their answer publicly.</string>
 
-    <string name="registerPlease" translatable="false" tools:ignore="DuplicateDefinition">Register, Please.</string>
+    <string name="registerPlease">Register, Please.</string>
 
-    <string name="itIsMandatory" translatable="false" tools:ignore="DuplicateDefinition">It is mandatory to register your account to start chat. </string>
+    <string name="itIsMandatory">It is mandatory to register your account to start chat. </string>
 
-    <string name="writeYourMessagehere" translatable="false" tools:ignore="DuplicateDefinition">Write your message here...</string>
+    <string name="writeYourMessagehere">Write your message here…</string>
 
-    <string name="chat" translatable="false" tools:ignore="DuplicateDefinition">Chat</string>
+    <string name="chat">Chat</string>
 
-    <string name="notification" translatable="false" tools:ignore="DuplicateDefinition">Notification</string>
+    <string name="notification">Notification</string>
 
-    <string name="bookmarked" translatable="false" tools:ignore="DuplicateDefinition">Bookmarked</string>
+    <string name="bookmarked">Bookmarked</string>
 
-    <string name="bookmarkBack" translatable="false" tools:ignore="DuplicateDefinition">Back</string>
+    <string name="bookmarkBack">Back</string>
 
-    <string name="editProfile" translatable="false" tools:ignore="DuplicateDefinition">Edit Profile</string>
+    <string name="editProfile">Edit Profile</string>
 
-    <string name="editProfileChangeBtn" translatable="false" tools:ignore="DuplicateDefinition">Change</string>
+    <string name="editProfileChangeBtn">Change</string>
 
-    <string name="searchContent" translatable="false" tools:ignore="DuplicateDefinition">Search content ...</string>
+    <string name="searchContent">Search content …</string>
 
     <string name="read" translatable="false" tools:ignore="DuplicateDefinition">Read</string>
 

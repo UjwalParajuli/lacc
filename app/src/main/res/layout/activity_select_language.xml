@@ -132,11 +132,11 @@
         <TextView
             android:id="@+id/tv_nepali_np"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="22dp"
             android:layout_marginStart="48dp"
             android:layout_marginTop="204dp"
             android:fontFamily="@font/arap_bk_regular"
-            android:gravity="center_horizontal|top"
+            android:gravity="center_horizontal|bottom"
             android:letterSpacing="0"
             android:lineSpacingExtra="5sp"
             android:text="@string/button_nepali"
